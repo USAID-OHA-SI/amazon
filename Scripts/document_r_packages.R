@@ -1,24 +1,29 @@
 library(tidyverse)
 
 local_pkgs <- installed.packages() %>% 
-  as_tibble() %>%
-  pull(Package)
+  as_tibble() 
 
 cran_pkgs <- available.packages() %>% 
   as_tibble() %>% 
   select(Package, Version, Imports, Suggests, Repository) %>% 
-  filter(Package %in% local_pkgs)
+  filter(Package %in% local_pkgs$Package)
 
-gh_pkgs <- setdiff(local_pkgs, cran_pkgs$Package)
+gh_pkgs <- setdiff(local_pkgs$Package, cran_pkgs$Package)
 
-local_gh_pkgs <- installed.packages() %>% 
-  as_tibble() %>% 
+local_gh_pkgs <- local_pkgs %>%  
   select(Package, Version, Imports, Suggests) %>% 
-  filter(Package %in% gh_pkgs) 
+  filter(Package %in% gh_pkgs) %>% 
+  mutate(Repository = map(Package, possibly(~ packageDescription(.x)$URL, 
+                                                otherwise = " "))) %>% 
+  unnest(Repository)
 
 my_pkgs <- cran_pkgs %>% 
   bind_rows(local_gh_pkgs) %>% 
-  mutate(Description = map_chr(Package, ~ utils::packageDescription(.x)$Description))
+  arrange(Package) %>% 
+  mutate(Description = map_chr(Package, ~ packageDescription(.x)$Description)) %>% 
+  rename_all(tolower)
 
-
-write_csv("Dataout/OHA_R_packages.csv", na = "")
+write_csv(my_pkgs,
+          "Dataout/OHA_R_packages.csv", 
+          na = "",
+          append = TRUE)
