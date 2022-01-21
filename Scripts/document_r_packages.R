@@ -23,7 +23,13 @@ my_pkgs <- cran_pkgs %>%
   mutate(Description = map_chr(Package, ~ packageDescription(.x)$Description)) %>% 
   rename_all(tolower)
 
-write_csv(my_pkgs,
+existing_pkgs <- read_csv("Dataout/OHA_R_packages.csv")
+
+new_pkgs <- my_pkgs %>% 
+  bind_rows(existing_pkgs %>% 
+              filter(!package %in% my_pkgs$package)) %>% 
+  arrange(package)
+
+write_csv(new_pkgs,
           "Dataout/OHA_R_packages.csv", 
-          na = "",
-          append = TRUE)
+          na = "")
