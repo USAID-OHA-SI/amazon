@@ -16,6 +16,14 @@ annotater,0.1.3,"stringr, purrr, tibble, dplyr, stringi, readr, clipr,
 rstudioapi, tidyr, rlang","testthat, knitr, rmarkdown, covr",https://github.com/luisDVA/annotater,"Similar to styler. Provides non-invasive annotation of package load calls 
     such as \code{library} and \code{require} so that we can have an idea of what 
     the packages we're loading are meant for."
+ape,5.6-2,"nlme, lattice, graphics, methods, stats, tools, utils,
+parallel, Rcpp (>= 0.12.0)","gee, expm, igraph, phangorn",https://cran.rstudio.com/src/contrib,"Functions for reading, writing, plotting, and manipulating phylogenetic trees, analyses of comparative data in a phylogenetic framework, ancestral character analyses, analyses of diversification and macroevolution, computing distances from DNA sequences, reading and writing nucleotide sequences as well as importing from BioConductor, and several tools such as Mantel's test, generalized skyline plots, graphical exploration of phylogenetic data (alex, trex, kronoviz), estimation of absolute evolutionary rates and clock-like trees using mean path lengths and penalized likelihood, dating trees with non-contemporaneous sequences, translating DNA into AA sequences, and assessing sequence alignments. Phylogeny estimation can be done with the NJ, BIONJ, ME, MVR, SDM, and triangle methods, and several methods handling incomplete distance matrices (NJ*, BIONJ*, MVR*, and the corresponding triangle method). Some functions call external applications (PhyML, Clustal, T-Coffee, Muscle) whose results are returned into R."
+AsioHeaders,1.22.1-1,,,https://cran.rstudio.com/src/contrib,"'Asio' is a cross-platform C++ library for network and low-level
+ I/O programming that provides developers with a consistent asynchronous model
+ using a modern C++ approach. It is also included in Boost but requires linking
+ when used with Boost. Standalone it can be used header-only (provided a recent
+ compiler). 'Asio' is written and maintained by Christopher M. Kohlhoff, and
+ released under the 'Boost Software License', Version 1.0."
 askpass,1.1,sys (>= 2.1),testthat,https://cran.rstudio.com/src/contrib,"Cross-platform utilities for prompting the user for credentials or a 
     passphrase, for example to authenticate with a server or read a protected key.
     Includes native programs for MacOS and Windows, hence no 'tcltk' is required. 
@@ -43,9 +51,23 @@ backports,1.4.1,,,https://cran.rstudio.com/src/contrib,"
     version, if available. Package developers can make use of new functions or
     arguments by selectively importing specific backports to
     support older installations."
+BAMMtools,2.1.10,"Rcpp (>= 0.11.0), gplots, methods",parallel,https://cran.rstudio.com/src/contrib,"Provides functions for analyzing and visualizing complex
+    macroevolutionary dynamics on phylogenetic trees. It is a companion
+    package to the command line program BAMM (Bayesian Analysis of
+    Macroevolutionary Mixtures) and is entirely oriented towards the analysis,
+    interpretation, and visualization of evolutionary rates. Functionality
+    includes visualization of rate shifts on phylogenies, estimating
+    evolutionary rates through time, comparing posterior distributions of
+    evolutionary rates across clades, comparing diversification models using
+    Bayes factors, and more."
 base64enc,0.1-3,,,https://cran.rstudio.com/src/contrib,This package provides tools for handling base64 encoding. It is more flexible than the orphaned base64 package.
 beeswarm,0.4.0,"stats, graphics, grDevices, utils",,https://cran.rstudio.com/src/contrib,"The bee swarm plot is a one-dimensional scatter plot like
     ""stripchart"", but with closely-packed, non-overlapping points. "
+bench,1.1.2,"glue, methods, pillar, profmem, rlang (>= 0.2.0), stats,
+tibble (>= 3.0.1), utils","covr, dplyr, forcats, ggbeeswarm, ggplot2, ggridges,
+jsonlite, mockery, parallel, scales, testthat, tidyr (>=
+0.8.1), vctrs, withr",https://cran.rstudio.com/src/contrib,"Tools to accurately benchmark and analyze execution times for
+    R expressions."
 BH,1.78.0-0,,,https://cran.rstudio.com/src/contrib,"Boost provides free peer-reviewed portable C++ source 
  libraries.  A large part of Boost is provided as C++ template code
  which is resolved entirely at compile-time without linking.  This 
@@ -80,28 +102,31 @@ bit64,4.0.5,,,https://cran.rstudio.com/src/contrib,"
  Many fast algorithmic operations such as 'match' and 'order' support inter-
  active data exploration and manipulation and optionally leverage caching."
 bitops,1.0-7,,,https://cran.rstudio.com/src/contrib,Functions for bitwise operations on integer vectors.
-blob,1.2.2,"methods, rlang, vctrs (>= 0.2.1)","covr, crayon, pillar (>= 1.2.1), testthat",https://cran.rstudio.com/src/contrib,"R's raw vector is useful for storing a single
+blob,1.2.3,"methods, rlang, vctrs (>= 0.2.1)","covr, crayon, pillar (>= 1.2.1), testthat",https://cran.rstudio.com/src/contrib,"R's raw vector is useful for storing a single
     binary object.  What if you want to put a vector of them in a data
     frame? The 'blob' package provides the blob object, a list of raw
     vectors, suitable for use as a column in data frame."
+bmp,0.3,,"pixmap, testthat",https://cran.rstudio.com/src/contrib,"Reads Windows BMP format images. Currently limited to 8 bit
+    greyscale images and 24,32 bit (A)RGB images. Pure R implementation without
+    external dependencies."
 boot,1.3-28,,"MASS, survival",https://cran.rstudio.com/src/contrib,"Functions and datasets for bootstrapping from the
   book ""Bootstrap Methods and Their Application"" by A. C. Davison and 
   D. V. Hinkley (1997, CUP), originally written by Angelo Canty for S."
-brew,1.0-6,,,https://cran.rstudio.com/src/contrib,"brew implements a templating framework for mixing text and
+brew,1.0-7,,testthat,https://cran.rstudio.com/src/contrib,"Implements a templating framework for mixing text and
         R code for report generation. brew template syntax is similar
         to PHP, Ruby's erb module, Java Server Pages, and Python's psp
         module."
 brio,1.1.3,,"covr, testthat (>= 2.1.0)",https://cran.rstudio.com/src/contrib,"Functions to handle basic input output, these functions
     always read and write UTF-8 (8-bit Unicode Transformation Format)
     files and provide more explicit control over line endings."
-broom,0.7.11,"backports, dplyr (>= 1.0.0), ellipsis, generics (>= 0.0.2),
+broom,1.0.0,"backports, dplyr (>= 1.0.0), ellipsis, generics (>= 0.0.2),
 glue, methods, purrr, rlang, stringr, tibble (>= 3.0.0), tidyr
-(>= 1.0.0), ggplot2","AER, akima, AUC, bbmle, betareg, biglm, binGroup, boot,
-btergm, car, caret, cluster, cmprsk, coda, covr, drc, e1071,
+(>= 1.0.0), ggplot2","AER, AUC, bbmle, betareg, biglm, binGroup, boot, btergm (>=
+1.10.6), car, caret, cluster, cmprsk, coda, covr, drc, e1071,
 emmeans, epiR, ergm (>= 3.10.4), fixest (>= 0.9.0), gam (>=
 1.15), gee, geepack, glmnet, glmnetUtils, gmm, Hmisc, irlba,
-joineRML, Kendall, knitr, ks, Lahman, lavaan, leaps, lfe,
-lm.beta, lme4, lmodel2, lmtest (>= 0.9.38), lsmeans, maps,
+interp, joineRML, Kendall, knitr, ks, Lahman, lavaan, leaps,
+lfe, lm.beta, lme4, lmodel2, lmtest (>= 0.9.38), lsmeans, maps,
 maptools, margins, MASS, Matrix, mclust, mediation, metafor,
 mfx, mgcv, mlogit, modeldata, modeltests, muhaz, multcomp,
 network, nnet, orcutt (>= 2.2), ordinal, plm, poLCA, psych,
@@ -127,15 +152,15 @@ survey, survival, testthat, VGAM",https://cran.rstudio.com/src/contrib,"Provides
     model 'broom::tidy()' tibbles.  The suite includes functions to group
     regression model terms by variable, insert reference and header rows
     for categorical variables, add variable labels, and more."
-bslib,0.3.1,"grDevices, htmltools (>= 0.5.2), jsonlite, sass (>= 0.4.0),
-jquerylib (>= 0.1.3), rlang","shiny (>= 1.6.0), rmarkdown (>= 2.7), thematic, knitr,
+bslib,0.4.0,"grDevices, htmltools (>= 0.5.2), jsonlite, sass (>= 0.4.0),
+jquerylib (>= 0.1.3), rlang, cachem, memoise","shiny (>= 1.6.0), rmarkdown (>= 2.7), thematic, knitr,
 testthat, withr, rappdirs, curl, magrittr",https://cran.rstudio.com/src/contrib,Simplifies custom 'CSS' styling of both 'shiny' and 'rmarkdown' via 'Bootstrap' 'Sass'. Supports both 'Bootstrap' 3 and 4 as well as their various 'Bootswatch' themes. An interactive widget is also provided for previewing themes in real time.
 cachem,1.0.6,"rlang, fastmap",testthat,https://cran.rstudio.com/src/contrib,"Key-value stores with automatic pruning. Caches can limit
     either their total size or the age of the oldest object (or both),
     automatically pruning objects to maintain the constraints."
 Cairo,1.5-14,"grDevices, graphics",png,https://cran.rstudio.com/src/contrib,"R graphics device using cairographics library that can be used to create high-quality vector (PDF, PostScript and SVG) and bitmap output (PNG,JPEG,TIFF), and high-quality rendering in displays (X11 and Win32). Since it uses the same back-end for all output, copying across formats is WYSIWYG. Files are created without the dependence on X11 or other external programs. This device supports alpha channel (semi-transparent drawing) and resulting images can contain transparent and semi-transparent regions. It is ideal for use in server environments (file output) and as a replacement for other devices that don't have Cairo's capabilities such as alpha support or anti-aliasing. Backends are modular such that any subset of backends is supported."
-callr,3.7.0,"processx (>= 3.5.0), R6, utils","cli, covr, ps, rprojroot, spelling, testthat, withr (>=
-2.3.0)",https://cran.rstudio.com/src/contrib,"It is sometimes useful to perform a computation in a
+callr,3.7.1,"processx (>= 3.6.1), R6, utils","cli (>= 1.1.0), covr, mockery, ps, rprojroot, spelling,
+testthat (>= 3.0.0), withr (>= 2.3.0)",https://cran.rstudio.com/src/contrib,"It is sometimes useful to perform a computation in a
     separate R process, without affecting the current R process at all.
     This packages does exactly that."
 car,3.0-12,"abind, MASS, mgcv, nnet, pbkrtest (>= 0.4-4), quantreg,
@@ -157,25 +182,31 @@ MASS, Matrix, mda, mgcv, mlbench, MLmetrics, nnet, pamr, party
 rpart, spls, subselect, superpc, testthat (>= 0.9.1), themis
 (>= 0.1.3)",https://cran.rstudio.com/src/contrib,"Misc functions for training and plotting classification and
     regression models."
+caTools,1.18.2,bitops,"MASS, rpart",https://cran.rstudio.com/src/contrib,"Contains several basic utility functions including: moving
+        (rolling, running) window statistic functions, read/write for
+        GIF and ENVI binary files, fast calculation of AUC, LogitBoost
+        classifier, base64 encoder/decoder, round-off-error-free sum
+        and cumsum, etc."
 cellranger,1.1.0,"rematch, tibble","covr, testthat (>= 1.0.0), knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Helper functions to work with spreadsheets and the ""A1:D10"" style
     of cell range specification."
-checkmate,2.0.0,"backports (>= 1.1.0), utils","R6, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,
+checkmate,2.1.0,"backports (>= 1.1.0), utils","R6, fastmatch, data.table (>= 1.9.8), devtools, ggplot2,
 knitr, magrittr, microbenchmark, rmarkdown, testthat (>=
-0.11.0), tinytest (>= 1.1.0), tibble",https://cran.rstudio.com/src/contrib,"Tests and assertions to perform frequent argument checks. A
+3.0.4), tinytest (>= 1.1.0), tibble",https://cran.rstudio.com/src/contrib,"Tests and assertions to perform frequent argument checks. A
     substantial part of the package was written in C to minimize any worries
     about execution time overhead."
 class,7.3-20,MASS,,https://cran.rstudio.com/src/contrib,"Various functions for classification, including k-nearest
   neighbour, Learning Vector Quantization and Self-Organizing Maps."
-classInt,0.4-3,"grDevices, stats, graphics, e1071, class, KernSmooth","spData (>= 0.2.6.2), units, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,Selected commonly used methods for choosing univariate class intervals for mapping or other graphics purposes.
-cli,3.1.1,"glue, utils","asciicast, callr, covr, grDevices, htmltools, htmlwidgets,
-knitr, methods, mockery, processx, ps (>= 1.3.4.9000), rlang,
-rmarkdown, rstudioapi, shiny, testthat, tibble, whoami, withr",https://cran.rstudio.com/src/contrib,"A suite of tools to build attractive command line interfaces
+classInt,0.4-7,"grDevices, stats, graphics, e1071, class, KernSmooth","spData (>= 0.2.6.2), units, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,Selected commonly used methods for choosing univariate class intervals for mapping or other graphics purposes.
+cli,3.3.0,"glue (>= 1.6.0), utils","asciicast, callr, covr, digest, grDevices, htmltools,
+htmlwidgets, knitr, methods, mockery, processx, ps (>=
+1.3.4.9000), rlang, rmarkdown, rstudioapi, shiny, testthat,
+tibble, whoami, withr",https://cran.rstudio.com/src/contrib,"A suite of tools to build attractive command line interfaces
     ('CLIs'), from semantic elements: headings, lists, alerts, paragraphs,
     etc. Supports custom themes via a 'CSS'-like language. It also contains a
     number of lower level 'CLI' elements: rules, boxes, trees, and
     'Unicode' symbols with 'ASCII' alternatives. It support ANSI colors and
     text styles as well."
-clipr,0.7.1,utils,"covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
+clipr,0.8.0,utils,"covr, knitr, rmarkdown, rstudioapi (>= 0.5), testthat (>=
 2.0.0)",https://cran.rstudio.com/src/contrib,"Simple utility functions to read from and write to
     the Windows, OS X, and X11 clipboards."
 clisymbols,1.2.0,,testthat,https://cran.rstudio.com/src/contrib,"A small subset of Unicode symbols, that are useful
@@ -191,7 +222,7 @@ clock,0.6.0,"ellipsis (>= 0.3.1), rlang (>= 0.4.10), tzdb (>= 0.2.0), vctrs
     that the complexities of time zones are only considered when they are
     really needed. Capabilities include: date-time parsing, formatting,
     arithmetic, extraction and updating of components, and rounding."
-cluster,2.1.2,"graphics, grDevices, stats, utils","MASS, Matrix",https://cran.rstudio.com/src/contrib,"Methods for Cluster analysis.  Much extended the original from
+cluster,2.1.3,"graphics, grDevices, stats, utils","MASS, Matrix",https://cran.rstudio.com/src/contrib,"Methods for Cluster analysis.  Much extended the original from
 	Peter Rousseeuw, Anja Struyf and Mia Hubert,
 	based on Kaufman and Rousseeuw (1990) ""Finding Groups in Data""."
 codetools,0.2-18,,,https://cran.rstudio.com/src/contrib,Code analysis tools for R.
@@ -207,7 +238,7 @@ viridis",https://github.com/clauswilke/colorblindr,"Provides a variety of functi
   to simulate the effects of various types of colorblindness. The resulting 
   figures are standard grid objects and can be further manipulated or outputted
   as usual."
-colorspace,2.0-2,"graphics, grDevices, stats","datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
+colorspace,2.0-3,"graphics, grDevices, stats","datasets, utils, KernSmooth, MASS, kernlab, mvtnorm, vcd,
 tcltk, shiny, shinyjs, ggplot2, dplyr, scales, grid, png, jpeg,
 knitr, rmarkdown, RColorBrewer, rcartocolor, scico, viridis,
 wesanderson",https://cran.rstudio.com/src/contrib,"Carries out mapping between assorted color spaces including RGB, HSV, HLS,
@@ -224,7 +255,7 @@ wesanderson",https://cran.rstudio.com/src/contrib,"Carries out mapping between a
 	     Details can be found on the project web page at <https://colorspace.R-Forge.R-project.org/>
 	     and in the accompanying scientific paper: Zeileis et al. (2020, Journal of Statistical
 	     Software, <doi:10.18637/jss.v096.i01>)."
-commonmark,1.7,,"curl, testthat, xml2",https://cran.rstudio.com/src/contrib,"The CommonMark specification defines a rationalized version of markdown
+commonmark,1.8.0,,"curl, testthat, xml2",https://cran.rstudio.com/src/contrib,"The CommonMark specification defines a rationalized version of markdown
     syntax. This package uses the 'cmark' reference implementation for converting
     markdown text into various formats including html, latex and groff man. In
     addition it exposes the markdown parse tree in xml format. Also includes opt-in
@@ -240,7 +271,7 @@ conflicted,1.1.0,"memoise, rlang (>= 0.3.4)","callr, crayon, dplyr, Matrix, meth
 conquer,1.2.1,"Rcpp (>= 1.0.3), Matrix, matrixStats, stats, caret",,https://cran.rstudio.com/src/contrib,"Estimation and inference for conditional linear quantile regression models using a convolution smoothed approach. In the low-dimensional setting, efficient gradient-based methods are employed for fitting both a single model and a regression process over a quantile range. Normal-based and (multiplier) bootstrap confidence intervals for all slope coefficients are constructed. In high dimensions, the conquer methods complemented with l_1-penalization and iteratively reweighted l_1-penalization are used to fit sparse models."
 corrplot,0.92,,"seriation, knitr, RColorBrewer, rmarkdown, magrittr,
 prettydoc, testthat",https://cran.rstudio.com/src/contrib,Provides a visual exploratory tool on correlation matrix that supports automatic variable reordering to help detect hidden patterns among variables.
-countrycode,1.3.0,,"testthat, tibble, utf8",https://cran.rstudio.com/src/contrib,"Standardize country names, convert them into one of 40
+countrycode,1.4.0,,"testthat, tibble, utf8",https://cran.rstudio.com/src/contrib,"Standardize country names, convert them into one of 40
     different coding schemes, convert between coding schemes, and assign
     region descriptors."
 COVIDutilities,1.1.0,"magrittr, dplyr, tidyr, readr, tibble, stats, purrr, rvest,
@@ -264,7 +295,7 @@ testthat, tibble, utils, vctrs, withr",https://cran.rstudio.com/src/contrib,"Pro
     against long jumps from the C API as well as C++ exceptions, conform
     to normal R function semantics and supports interaction with 'ALTREP'
     vectors."
-crayon,1.4.2,"grDevices, methods, utils","mockery, rstudioapi, testthat, withr",https://cran.rstudio.com/src/contrib,"Colored terminal output on terminals that support 'ANSI'
+crayon,1.5.1,"grDevices, methods, utils","mockery, rstudioapi, testthat, withr",https://cran.rstudio.com/src/contrib,"Colored terminal output on terminals that support 'ANSI'
     color and highlight codes. It also works in 'Emacs' 'ESS'. 'ANSI'
     color support is automatically detected. Colors and highlighting can
     be combined and nested. New styles can also be created easily.
@@ -306,7 +337,7 @@ nanotime, zoo (>= 1.8-1), yaml, knitr, rmarkdown",https://cran.rstudio.com/src/c
 datapackcommons,1.0.2,"assertthat, dplyr, glue, httr, jsonlite, lubridate, magrittr,
 plyr, purrr, readr, rlist, stringr, tibble, tidyr, datimutils","doMC, httptest, testthat, datimvalidation",https://github.com/pepfar-datim/data-pack-commons,"More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description."
-datapackr,5.0.3,"dplyr (>= 0.8.3), tidyr (>= 1.0.0), tidyxl (>= 1.0.4), readxl
+datapackr,5.1.2,"dplyr (>= 0.8.3), tidyr (>= 1.0.0), tidyxl (>= 1.0.4), readxl
 (>= 1.3.1), readr (>= 1.3.1), jsonlite (>= 1.6), purrr (>=
 0.3.3), tibble (>= 2.1.3), stringr (>= 1.4.0), stringi, httr
 (>= 1.4.0), rlist (>= 0.4.6.1), magrittr (>= 1.5), crayon (>=
@@ -319,7 +350,7 @@ rprojroot",https://github.com/pepfar-datim/datapackr,Generates and processes PEP
 datapasta,3.1.0,"readr (>= 1.2.0), clipr (>= 0.3.0), rstudioapi (>= 0.6),
 methods","tibble (>= 1.2), testthat, knitr, rmarkdown, utils, covr,
 data.table",https://cran.rstudio.com/src/contrib,RStudio addins and R functions that make copy-pasting vectors and tables to text painless.
-datimutils,0.1.2,"dplyr (>= 0.8.3), tidyr (>= 0.8.3), readr (>= 1.3.1), jsonlite
+datimutils,0.1.3,"dplyr (>= 0.8.3), tidyr (>= 0.8.3), readr (>= 1.3.1), jsonlite
 (>= 1.6), purrr (>= 0.3.2), tibble (>= 2.1.1), stringr (>=
 1.4.0), stringi (>= 1.4.3), httr (>= 1.4.0), rlist (>=
 0.4.6.1), magrittr (>= 1.5), keyring, lazyeval, stats,
@@ -339,36 +370,38 @@ knitr (>= 1.21), methods, rmarkdown (>= 1.11), roxygen2 (>=
         provided for the 'PEPFAR' data exchange community in order to
         validate their prospective data payloads prior to submission
         for import."
-DBI,1.1.2,,"blob, covr, DBItest, dbplyr, downlit, dplyr, glue, hms,
+DBI,1.1.3,,"blob, covr, DBItest, dbplyr, downlit, dplyr, glue, hms,
 knitr, magrittr, RMariaDB, rmarkdown, rprojroot, RSQLite (>=
 1.1-2), testthat, xml2",https://cran.rstudio.com/src/contrib,"A database interface definition for communication between R
     and relational database management systems.  All classes in this
     package are virtual and need to be extended by the various R/DBMS
     implementations."
-dbplyr,2.1.1,"assertthat (>= 0.2.0), blob (>= 1.2.0), DBI (>= 1.0.0), dplyr
-(>= 1.0.4), ellipsis, glue (>= 1.2.0), lifecycle (>= 1.0.0),
-magrittr, methods, purrr (>= 0.2.5), R6 (>= 2.2.2), rlang (>=
-0.2.0), tibble (>= 1.4.2), tidyselect (>= 0.2.4), utils, vctrs,
-withr","bit64, covr, knitr, Lahman, nycflights13, odbc, RMariaDB (>=
+dbplyr,2.2.1,"assertthat (>= 0.2.0), blob (>= 1.2.0), cli (>= 3.3.0), DBI
+(>= 1.0.0), dplyr (>= 1.0.9), glue (>= 1.2.0), lifecycle (>=
+1.0.0), magrittr, methods, pillar (>= 1.5.0), purrr (>= 0.2.5),
+R6 (>= 2.2.2), rlang (>= 1.0.0), tibble (>= 1.4.2), tidyselect
+(>= 0.2.4), utils, vctrs (>= 0.4.1), withr","bit64, covr, knitr, Lahman, nycflights13, odbc, RMariaDB (>=
 1.0.2), rmarkdown, RPostgres (>= 1.1.3), RPostgreSQL, RSQLite
-(>= 2.1.0), testthat (>= 3.0.2), tidyr",https://cran.rstudio.com/src/contrib,"A 'dplyr' back end for databases that allows you to
+(>= 2.1.0), testthat (>= 3.0.2), tidyr (>= 1.2.0)",https://cran.rstudio.com/src/contrib,"A 'dplyr' back end for databases that allows you to
     work with remote database tables as if they are in-memory data frames.
     Basic features works with any database that has a 'DBI' back end; more
     advanced features require 'SQL' translation to be provided by the
     package author."
-desc,1.4.0,"utils, R6, crayon, rprojroot","covr, testthat, whoami, withr, spelling, gh",https://cran.rstudio.com/src/contrib,"Tools to read, write, create, and manipulate DESCRIPTION files.
-    It is intended for packages that create or manipulate other packages."
-devtools,2.4.3,"callr (>= 3.6.0), cli (>= 3.0.0), desc (>= 1.3.0), ellipsis
-(>= 0.3.1), fs (>= 1.5.0), httr (>= 1.4.2), lifecycle (>=
-1.0.0), memoise (>= 2.0.0), pkgbuild (>= 1.2.0), pkgload (>=
-1.2.1), rcmdcheck (>= 1.3.3), remotes (>= 2.3.0), rlang (>=
-0.4.10), roxygen2 (>= 7.1.1), rstudioapi (>= 0.13), rversions
-(>= 2.0.2), sessioninfo (>= 1.1.1), stats, testthat (>= 3.0.2),
-tools, utils, withr (>= 2.4.1)","BiocManager (>= 1.30.12), covr (>= 3.5.1), curl (>= 4.3),
-digest (>= 0.6.27), DT (>= 0.17), foghorn (>= 1.3.2), gh (>=
-1.2.1), gmailr (>= 1.0.0), knitr (>= 1.31), lintr (>= 2.0.1),
-MASS, mockery (>= 0.4.2), pingr (>= 2.0.1), pkgdown (>= 1.6.1),
-rhub (>= 1.1.1), rmarkdown (>= 2.7), spelling (>= 2.2)",https://cran.rstudio.com/src/contrib,Collection of package development tools.
+desc,1.4.1,"cli, R6, rprojroot, utils","callr, covr, gh, spelling, testthat, whoami, withr",https://cran.rstudio.com/src/contrib,"Tools to read, write, create, and manipulate DESCRIPTION
+    files.  It is intended for packages that create or manipulate other
+    packages."
+devtools,2.4.4,"cli (>= 3.3.0), desc (>= 1.4.1), ellipsis (>= 0.3.2), fs (>=
+1.5.2), lifecycle (>= 1.0.1), memoise (>= 2.0.1), miniUI (>=
+0.1.1.1), pkgbuild (>= 1.3.1), pkgdown (>= 2.0.6), pkgload (>=
+1.3.0), profvis (>= 0.3.7), rcmdcheck (>= 1.4.0), remotes (>=
+2.4.2), rlang (>= 1.0.4), roxygen2 (>= 7.2.1), rversions (>=
+2.1.1), sessioninfo (>= 1.2.2), stats, testthat (>= 3.1.4),
+tools, urlchecker (>= 1.0.1), utils, withr (>= 2.5.0)","BiocManager (>= 1.30.18), callr (>= 3.7.1), covr (>= 3.5.1),
+curl (>= 4.3.2), digest (>= 0.6.29), DT (>= 0.23), foghorn (>=
+1.4.2), gh (>= 1.3.0), gmailr (>= 1.0.1), httr (>= 1.4.3),
+knitr (>= 1.39), lintr (>= 3.0.0), MASS, mockery (>= 0.4.3),
+pingr (>= 2.0.1), rhub (>= 1.1.1), rmarkdown (>= 2.14),
+rstudioapi (>= 0.13), spelling (>= 2.2)",https://cran.rstudio.com/src/contrib,Collection of package development tools.
 diffobj,0.3.5,"crayon (>= 1.3.2), tools, methods, utils, stats","knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Generate a colorized diff of two R objects for an intuitive
     visualization of their differences."
 digest,0.6.29,utils,"tinytest, simplermarkdown",https://cran.rstudio.com/src/contrib,"Implementation of a function 'digest()' for the creation of hash
@@ -387,9 +420,9 @@ numDeriv, ggplot2, scales, farver, digest, utils, lifecycle","testthat (>= 2.1.0
     data-oriented workflow. In addition to providing generic replacements for
     p/d/q/r functions, other useful statistics can be computed including means,
     variances, intervals, and highest density regions."
-downlit,0.4.0,"brio, desc, digest, evaluate, fansi, memoise, rlang, vctrs,
-yaml","covr, htmltools, jsonlite, leaflet, MASS, pkgload, rmarkdown,
-testthat (>= 3.0.0), xml2",https://cran.rstudio.com/src/contrib,"Syntax highlighting of R code, specifically designed for the
+downlit,0.4.2,"brio, desc, digest, evaluate, fansi, memoise, rlang, vctrs,
+withr, yaml","covr, htmltools, jsonlite, MASS, MassSpecWavelet, pkgload,
+rmarkdown, testthat (>= 3.0.0), xml2",https://cran.rstudio.com/src/contrib,"Syntax highlighting of R code, specifically designed for the
     needs of 'RMarkdown' packages like 'pkgdown', 'hugodown', and
     'bookdown'. It includes linking of function calls to their
     documentation on the web, and automatic translation of ANSI escapes in
@@ -400,26 +433,27 @@ downloader,0.4,"utils, digest",testthat,https://cran.rstudio.com/src/contrib,"Pr
     (and much more) but can be difficult to install because it must be compiled
     with external dependencies. This package has no external dependencies, so
     it is much easier to install."
-dplyr,1.0.7,"ellipsis, generics, glue (>= 1.3.2), lifecycle (>= 1.0.0),
-magrittr (>= 1.5), methods, R6, rlang (>= 0.4.10), tibble (>=
-2.1.3), tidyselect (>= 1.1.0), utils, vctrs (>= 0.3.5), pillar
-(>= 1.5.1)","bench, broom, callr, covr, DBI, dbplyr (>= 1.4.3), knitr,
-Lahman, lobstr, microbenchmark, nycflights13, purrr, rmarkdown,
-RMySQL, RPostgreSQL, RSQLite, testthat (>= 3.0.2), tidyr, withr",https://cran.rstudio.com/src/contrib,"A fast, consistent tool for working with data frame
+dplyr,1.0.9,"generics, glue (>= 1.3.2), lifecycle (>= 1.0.1), magrittr (>=
+1.5), methods, R6, rlang (>= 1.0.2), tibble (>= 2.1.3),
+tidyselect (>= 1.1.1), utils, vctrs (>= 0.4.1), pillar (>=
+1.5.1)","bench, broom, callr, covr, DBI, dbplyr (>= 1.4.3), ggplot2,
+knitr, Lahman, lobstr, microbenchmark, nycflights13, purrr,
+rmarkdown, RMySQL, RPostgreSQL, RSQLite, testthat (>= 3.1.1),
+tidyr, withr",https://cran.rstudio.com/src/contrib,"A fast, consistent tool for working with data frame
     like objects, both in memory and out of memory."
-DT,0.20,"htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
+DT,0.23,"htmltools (>= 0.3.6), htmlwidgets (>= 1.3), jsonlite (>=
 0.9.16), magrittr, crosstalk, jquerylib, promises","knitr (>= 1.8), rmarkdown, shiny (>= 1.6), bslib, testit",https://cran.rstudio.com/src/contrib,"Data objects in R can be rendered as HTML tables using the
     JavaScript library 'DataTables' (typically via R Markdown or Shiny). The
     'DataTables' library has been included in this R package. The package name
     'DT' is an abbreviation of 'DataTables'."
 dtplyr,1.2.1,"crayon, data.table (>= 1.13.0), dplyr (>= 1.0.3), ellipsis,
 glue, lifecycle, rlang, tibble, tidyselect, vctrs","bench, covr, knitr, rmarkdown, testthat (>= 3.0.0), tidyr (>=
-1.1.0)",https://cran.rstudio.com/src/contrib,"Provides a data.table backend for 'dplyr'. The goal
-    of 'dtplyr' is to allow you to write 'dplyr' code that is
-    automatically translated to the equivalent, but usually much faster,
-    data.table code."
+1.1.0)",https://cran.rstudio.com/src/contrib,"Provides a data.table backend for 'dplyr'. The goal of
+    'dtplyr' is to allow you to write 'dplyr' code that is automatically
+    translated to the equivalent, but usually much faster, data.table
+    code."
 dynlm,0.3-6,"stats, car (>= 2.0-0), lmtest","datasets, sandwich, strucchange, TSA",https://cran.rstudio.com/src/contrib,Dynamic linear models and time series regression.
-e1071,1.7-9,"graphics, grDevices, class, stats, methods, utils, proxy","cluster, mlbench, nnet, randomForest, rpart, SparseM, xtable,
+e1071,1.7-11,"graphics, grDevices, class, stats, methods, utils, proxy","cluster, mlbench, nnet, randomForest, rpart, SparseM, xtable,
 Matrix, MASS, slam",https://cran.rstudio.com/src/contrib,"Functions for latent class analysis, short time Fourier
 	     transform, fuzzy clustering, support vector machines,
 	     shortest path computation, bagged clustering, naive Bayes
@@ -440,9 +474,9 @@ estimatr,0.30.4,"Formula, generics, methods, Rcpp (>= 0.12.16), rlang (>=
 clubSandwich, emmeans (>= 1.4), estimability, ivpack, margins,
 modelsummary, prediction, RcppEigen, sandwich, stargazer,
 testthat, car",https://cran.rstudio.com/src/contrib,"Fast procedures for small set of commonly-used, design-appropriate estimators with robust standard errors and confidence intervals. Includes estimators for linear regression, instrumental variables regression, difference-in-means, Horvitz-Thompson estimation, and regression improving precision of experimental estimates by interacting treatment with centered pre-treatment covariates introduced by Lin (2013) <doi:10.1214/12-AOAS583>."
-evaluate,0.14,methods,"testthat, lattice, ggplot2",https://cran.rstudio.com/src/contrib,"Parsing and evaluation tools that make it easy to recreate the
+evaluate,0.15,methods,"covr, ggplot2, lattice, testthat",https://cran.rstudio.com/src/contrib,"Parsing and evaluation tools that make it easy to recreate the
     command line behaviour of R."
-extrafont,0.17,"extrafontdb, grDevices, utils, Rttf2pt1",fontcm,https://cran.rstudio.com/src/contrib,"Tools to using fonts other than the standard PostScript fonts.
+extrafont,0.18,"extrafontdb, grDevices, utils, Rttf2pt1",fontcm,https://cran.rstudio.com/src/contrib,"Tools to using fonts other than the standard PostScript fonts.
     This package makes it easy to use system TrueType fonts and with PDF or
     PostScript output files, and with bitmap output files in Windows. extrafont
     can also be used with fonts packaged specifically to be used with, such as
@@ -450,9 +484,9 @@ extrafont,0.17,"extrafontdb, grDevices, utils, Rttf2pt1",fontcm,https://cran.rst
     symbols. See https://github.com/wch/extrafont for instructions and
     examples."
 extrafontdb,1.0,,,https://cran.rstudio.com/src/contrib,Package for holding the database for the extrafont package
-fansi,1.0.2,"grDevices, utils","unitizer, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Counterparts to R string manipulation functions that account for
+fansi,1.0.3,"grDevices, utils","unitizer, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Counterparts to R string manipulation functions that account for
    the effects of ANSI text formatting control sequences."
-farver,2.1.0,,"testthat (>= 2.1.0), covr",https://cran.rstudio.com/src/contrib,"The encoding of colour can be handled in many different ways, using
+farver,2.1.1,,"covr, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"The encoding of colour can be handled in many different ways, using
     different colour spaces. As different colour spaces have different uses,
     efficient conversion between these representations are important. The 
     'farver' package provides a set of functions that gives access to very fast
@@ -465,6 +499,8 @@ fastmap,1.1.0,,testthat (>= 2.1.1),https://cran.rstudio.com/src/contrib,"Fast im
     table, causing a small amount of memory leakage. This can be problematic in
     cases where many different keys are used. Fastmap avoids this memory leak
     issue by implementing the map using data structures in C++."
+feather,0.3.5,"Rcpp, tibble (>= 2.0.0), hms",testthat,https://cran.rstudio.com/src/contrib,"Read and write feather files, a lightweight binary columnar
+    data store designed for maximum speed."
 filelock,1.0.2,,"callr (>= 2.0.0), covr, testthat",https://cran.rstudio.com/src/contrib,"Place an exclusive or shared lock on a file. It uses 'LockFile'
     on Windows and 'fcntl' locks on Unix-like systems."
 fledge,0.1.0,"cli, desc (>= 1.2.0), enc, gert (>= 1.4.0), purrr (>= 0.3.2),
@@ -477,7 +513,12 @@ flow,0.0.2,"nomnoml, utils, htmlwidgets, rstudioapi, webshot, styler","testthat 
   features include analogs to 'debug' and 'debugonce' to target specific functions to draw,
   an utility to draw the calls used in the tests of the package in a markdown report, 
   and an utility to draw all the functions of one package in a markdown report."
-fontawesome,0.2.2,"rlang (>= 0.4.10), htmltools (>= 0.5.1.1)","covr, knitr, testthat, rsvg",https://cran.rstudio.com/src/contrib,"Easily and flexibly insert 'Font Awesome' icons into 'R Markdown'
+fmsb,0.7.3,,"Epi, vcd",https://cran.rstudio.com/src/contrib,"Several utility functions for the book entitled 
+	""Practices of Medical and Health Data Analysis using R""
+	(Pearson Education Japan, 2007) with Japanese demographic
+	data and some demographic analysis related functions."
+fontawesome,0.3.0,"rlang (>= 0.4.10), htmltools (>= 0.5.1.1)","covr, dplyr (>= 1.0.8), knitr (>= 1.31), testthat (>= 3.0.0),
+rsvg",https://cran.rstudio.com/src/contrib,"Easily and flexibly insert 'Font Awesome' icons into 'R Markdown'
     documents and 'Shiny' apps. These icons can be inserted into HTML content
     through inline 'SVG' tags or 'i' tags. There is also a utility function for
     exporting 'Font Awesome' icons as 'PNG' images for those situations where
@@ -528,6 +569,16 @@ rmarkdown, maps, IRanges, covr",https://cran.rstudio.com/src/contrib,"Join table
   match exactly, but whether they are similar by some comparison.
   Implementations include string distance and regular expression
   matching."
+gagglr,0.0.0.9000,"dplyr,
+git2r,
+magrittr,
+sessioninfo,
+stringr,
+tibble,
+usethis",,"https://github.com/USAID-OHA-SI/gagglr,https://usaid-oha-si.github.io/gagglr/","Since package are developed with a regular update cycle, users 
+  can often be using outdated packages that resolve bug or add new features. This
+  checks to ensure you are using the lastest version of the 
+  OHA core package and allows you to load them all at the start of a session."
 gargle,1.2.0,"cli (>= 3.0.0), fs (>= 1.3.1), glue (>= 1.3.0), httr (>=
 1.4.0), jsonlite, rappdirs, rlang (>= 0.4.9), rstudioapi,
 stats, utils, withr","aws.ec2metadata, aws.signature, covr, httpuv, knitr, mockr,
@@ -535,7 +586,7 @@ rmarkdown, sodium, spelling, testthat (>= 3.0.0)",https://cran.rstudio.com/src/c
     <https://developers.google.com/apis-explorer>.  This includes
     functions and classes for handling common credential types and for
     preparing, executing, and processing HTTP requests."
-generics,0.1.1,methods,"covr, pkgload, testthat (>= 3.0.0), tibble, withr",https://cran.rstudio.com/src/contrib,"In order to reduce potential package dependencies
+generics,0.1.3,methods,"covr, pkgload, testthat (>= 3.0.0), tibble, withr",https://cran.rstudio.com/src/contrib,"In order to reduce potential package dependencies
     and conflicts, generics provides a number of commonly used S3
     generics."
 geojson,0.3.4,"methods, sp, jsonlite (>= 1.6), protolite (>= 1.8), jqr (>=
@@ -561,23 +612,23 @@ geojsonlint,0.4.0,"crul (>= 0.7.0), jsonlite (>= 0.9.19), jsonvalidate (>=
     'GeoJSON' schema via the 'Javascript' library
     (<https://www.npmjs.com/package/is-my-json-valid>). Some tools work locally
     while others require an internet connection."
-geojsonsf,2.0.1,Rcpp,"covr, jsonify, knitr, rmarkdown, tinytest",https://cran.rstudio.com/src/contrib,Converts Between GeoJSON and simple feature objects. 
+geojsonsf,2.0.1,Rcpp,"covr, jsonify, knitr, rmarkdown, tinytest",https://cran.rstudio.com/src/contrib,Converts Between GeoJSON and simple feature objects.
 geometries,0.2.0,Rcpp,"covr, knitr, rmarkdown, tinytest",https://cran.rstudio.com/src/contrib,"Geometry shapes in 'R' are typically represented by matrices (points, lines), with more complex 
   shapes being lists of matrices (polygons). 'Geometries' will convert various 'R' objects into these shapes. 
   Conversion functions are available at both the 'R' level, and through 'Rcpp'."
 geomtextpath,0.1.0,"grid, scales, systemfonts, rlang, textshaping","testthat (>= 3.0.0), covr, knitr, rmarkdown, ragg, qpdf",https://allancameron.github.io/geomtextpath,"Allows text to follow curved paths in ggplot2.
     This allows for neat labelling of curves and of plots in polar co-ordinates."
 geosphere,1.5-14,sp,"methods, raster",https://cran.rstudio.com/src/contrib,"Spherical trigonometry for geographic applications. That is, compute distances and related measures for angular (longitude/latitude) locations. "
-gert,1.5.0,"askpass, credentials (>= 1.2.1), openssl (>= 1.4.1),
-rstudioapi (>= 0.11), sys, zip (>= 2.1.0)","spelling, knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"Simple git client for R based on 'libgit2' with support for SSH and 
-    HTTPS remotes. All functions in 'gert' use basic R data types (such as vectors
-    and data-frames) for their arguments and return values. User credentials are
-    shared with command line 'git' through the git-credential store and ssh keys
-    stored on disk or ssh-agent."
+gert,1.6.0,"askpass, credentials (>= 1.2.1), openssl (>= 1.4.1),
+rstudioapi (>= 0.11), sys, zip (>= 2.1.0)","spelling, knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"Simple git client for R based on 'libgit2' <https://libgit2.org> with
+    support for SSH and HTTPS remotes. All functions in 'gert' use basic R data 
+    types (such as vectors and data-frames) for their arguments and return values.
+    User credentials are shared with command line 'git' through the git-credential
+    store and ssh keys stored on disk or ssh-agent."
 getPass,0.2-2,"utils, rstudioapi (>= 0.5)",argon2,https://cran.rstudio.com/src/contrib,"A micro-package for reading ""passwords"", i.e.  reading
     user input with masking, so that the input is not displayed as it 
     is typed.  Currently we have support for 'RStudio', the command line
-    (every OS), and any platform where 'tcltk' is present."
+    (every OS), and any platform where 'tcltk' is present.  "
 getrdone,0.0.0.9000,"magrittr,
 dplyr,
 ggplot2,
@@ -591,7 +642,7 @@ forcats,
 tidyselect,
 knitr,
 googlesheets4,
-stringr,",,https://github.com/tessam30/getrdone,This package is designed for working with PEPFAR data focused on Zambia. Numerous munging and plotting functions are provided to quickly process and visualize MSD data. 
+stringr,",,https://github.com/tessam30/getrdone,This package is designed for working with PEPFAR data focused on Zambia. Numerous munging and plotting functions are provided to quickly process and visualize MSD data.
 ggalluvial,0.12.3,"stats, dplyr (>= 0.7), tidyr (>= 0.7), lazyeval, rlang,
 tidyselect","grid, alluvial, testthat, knitr, rmarkdown, babynames,
 sessioninfo, ggrepel, shiny (>= 1.4.0.2), htmltools, sp (>=
@@ -650,7 +701,7 @@ ggpattern,0.2.0,"ggplot2, glue, grid, gridpattern (>= 0.2.1), rlang, scales,","a
 memoise, png, readr, rmarkdown, sf (>= 0.7-3), testthat (>=
 2.1.0), vdiffr","http://github.com/coolbutuseless/ggpattern,
 https://coolbutuseless.github.io/package/ggpattern/index.html",Geoms with patterns for ggplot2.
-ggplot2,3.3.5,"digest, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
+ggplot2,3.3.6,"digest, glue, grDevices, grid, gtable (>= 0.1.1), isoband,
 MASS, mgcv, rlang (>= 0.4.10), scales (>= 0.5.0), stats,
 tibble, withr (>= 2.0.0)","covr, ragg, dplyr, ggplot2movies, hexbin, Hmisc, interp,
 knitr, lattice, mapproj, maps, maptools, multcomp, munsell,
@@ -711,19 +762,63 @@ tibble, ggplot2, raster, sp, rnaturalearth, methods, crayon,
 httr, janitor, jsonlite, zip, glue","knitr, rmarkdown, testthat, here, rgdal, rgeos, sf,
 rnaturalearthdata, rnaturalearthhires, osmdata, patchwork,
 glamr, glitr, googledrive, googlesheets4",https://github.com/USAID-OHA-SI/gisr,R Spatial functions for HIV/AIDS related Geospatial Analytics.
+git2r,0.30.1,"graphics, utils",getPass,https://cran.rstudio.com/src/contrib,"Interface to the 'libgit2' library, which is a pure C
+    implementation of the 'Git' core methods. Provides access to 'Git'
+    repositories to extract data and running some basic 'Git'
+    commands."
 gitcreds,0.1.1,,"codetools, testthat, knitr, mockery, oskeyring, rmarkdown,
 withr",https://cran.rstudio.com/src/contrib,"Query, set, delete credentials from the 'git' credential
     store. Manage 'GitHub' tokens and other 'git' credentials. This package
     is to be used by other packages that need to authenticate to 'GitHub'
     and/or other 'git' repositories."
-glamr,1.0.2,"aws.s3, crayon, dplyr, glue, googledrive, lubridate, magrittr,
-purrr, stringr, tools, tidyr, usethis, utils","curl, fs, zip, httr, googlesheets4, janitor, jsonlite,
-keyring, keyringr, knitr, plyr, rmarkdown, readxl, rvest,
-testthat (>= 2.1.0), tibble, xml2, vroom, countrycode",https://github.com/USAID-OHA-SI/glamr,"Provides a series of base functions useful to the GH OHA SI team. This
+glamr,1.0.4,"aws.s3,
+crayon,
+dplyr,
+glue,
+googledrive,
+lubridate,
+magrittr,
+purrr,
+stringr,
+tools,
+tidyr,
+usethis,
+utils","curl,
+fs,
+zip,
+httr,
+googlesheets4,
+janitor,
+jsonlite,
+keyring,
+keyringr,
+knitr,
+plyr,
+rmarkdown,
+readxl,
+rvest,
+testthat (>= 2.1.0),
+tibble,
+xml2,
+vroom,
+countrycode",https://github.com/USAID-OHA-SI/glamr,"Provides a series of base functions useful to the GH OHA SI team. This
     includes project setup, pulling from DATIM, and key functions for working with the MSD."
-glitr,0.1.0,"ggplot2 (>= 3.3.0), ggtext, magrittr, scales, usethis,
-extrafont, lifecycle","rmarkdown, markdown, knitr, testthat, dplyr, forcats, tidyr,
-patchwork, sf, purrr",https://github.com/USAID-OHA-SI/glitr,"Helps create and export ggplot2 charts in the style used by 
+glitr,0.1.1,"ggplot2 (>= 3.3.0),
+ggtext,
+magrittr,
+scales,
+usethis,
+extrafont,
+lifecycle","rmarkdown,
+markdown,
+knitr,
+testthat,
+dplyr,
+forcats,
+tidyr,
+patchwork,
+sf,
+purrr",https://github.com/USAID-OHA-SI/glitr,"Helps create and export ggplot2 charts in the style used by 
     the GH OHA SI team. Includes multiple styles and themes to tweak plots
     to user needs. Sample testing data also available. "
 globals,0.14.0,codetools,,https://cran.rstudio.com/src/contrib,"Identifies global (""unknown"" or ""free"") objects in R expressions
@@ -731,9 +826,9 @@ globals,0.14.0,codetools,,https://cran.rstudio.com/src/contrib,"Identifies globa
     conservative).  The objective of this package is to make it as simple as
     possible to identify global objects for the purpose of exporting them in
     parallel, distributed compute environments."
-glue,1.6.0,methods,"covr, crayon, DBI, dplyr, forcats, ggplot2, knitr, magrittr,
+glue,1.6.2,methods,"covr, crayon, DBI, dplyr, forcats, ggplot2, knitr, magrittr,
 microbenchmark, R.utils, rmarkdown, rprintf, RSQLite, stringr,
-testthat, vctrs (>= 0.3.0), waldo, withr",https://cran.rstudio.com/src/contrib,"An implementation of interpreted string literals, inspired by
+testthat (>= 3.0.0), vctrs (>= 0.3.0), waldo (>= 0.3.0), withr",https://cran.rstudio.com/src/contrib,"An implementation of interpreted string literals, inspired by
     Python's Literal String Interpolation
     <https://www.python.org/dev/peps/pep-0498/> and Docstrings
     <https://www.python.org/dev/peps/pep-0257/> and Julia's Triple-Quoted
@@ -761,6 +856,26 @@ vctrs (>= 0.2.3)","covr, readr, rmarkdown, sodium, spelling, testthat (>=
 gower,0.2.2,,"tinytest (>= 0.9.3),",https://cran.rstudio.com/src/contrib,"Compute Gower's distance (or similarity) coefficient between records. Compute 
     the top-n matches between records. Core algorithms are executed in parallel on systems
     supporting OpenMP."
+gplots,3.1.3,"gtools, stats, caTools, KernSmooth, methods","grid, MASS, knitr, r2d2",https://cran.rstudio.com/src/contrib,"Various R programming tools for plotting data, including:
+  - calculating and plotting locally smoothed summary function as
+    ('bandplot', 'wapply'),
+  - enhanced versions of standard plots ('barplot2', 'boxplot2',
+    'heatmap.2', 'smartlegend'),
+  - manipulating colors ('col2hex', 'colorpanel', 'redgreen',
+    'greenred', 'bluered', 'redblue', 'rich.colors'),
+  - calculating and plotting two-dimensional data summaries ('ci2d',
+    'hist2d'),
+  - enhanced regression diagnostic plots ('lmplot2', 'residplot'),
+  - formula-enabled interface to 'stats::lowess' function ('lowess'),
+  - displaying textual data in plots ('textplot', 'sinkplot'),
+  - plotting a matrix where each cell contains a dot whose size
+    reflects the relative magnitude of the elements ('balloonplot'),
+  - plotting ""Venn"" diagrams ('venn'),
+  - displaying Open-Office style plots ('ooplot'),
+  - plotting multiple data on same region, with separate axes
+    ('overplot'),
+  - plotting means and confidence intervals ('plotCI', 'plotmeans'),
+  - spacing points in an x-y plot so they don't overlap ('space')."
 gridExtra,2.3,"gtable, grid, grDevices, graphics, utils","ggplot2, egg, lattice, knitr, testthat",https://cran.rstudio.com/src/contrib,"Provides a number of user-level functions to work with ""grid""
     graphics, notably to arrange multiple grid-based plots on a page, and draw
     tables."
@@ -772,12 +887,12 @@ gridtext,0.1.4,"grid, grDevices, markdown, rlang, Rcpp, RCurl, png, jpeg,
 stringr, xml2","covr, knitr, rmarkdown, testthat, vdiffr",https://cran.rstudio.com/src/contrib,"Provides support for rendering of formatted text using 'grid' graphics. Text can be
     formatted via a minimal subset of 'Markdown', 'HTML', and inline 'CSS' directives, and it can be
     rendered both with and without word wrap."
-gt,0.3.1,"base64enc (>= 0.1-3), bitops (>= 1.0.6), checkmate (>= 2.0.0),
-commonmark (>= 1.7), dplyr (>= 0.8.5), fs (>= 1.3.2), ggplot2
-(>= 3.3.0), glue (>= 1.3.2), htmltools (>= 0.5.0), magrittr (>=
-1.5), rlang (>= 0.4.5), sass (>= 0.1.1), scales (>= 1.1.0),
-stringr (>= 1.3.1), tibble (>= 3.0.0), tidyselect (>= 1.0.0)","covr, knitr, paletteer, testthat (>= 2.1.0), RColorBrewer,
-rmarkdown, rvest, shiny, tidyr, webshot, xml2",https://cran.rstudio.com/src/contrib,"Build display tables from tabular data with an easy-to-use set of
+gt,0.6.0,"base64enc (>= 0.1-3), bitops (>= 1.0.6), checkmate (>= 2.0.0),
+commonmark (>= 1.7), dplyr (>= 1.0.8), fs (>= 1.5.2), ggplot2
+(>= 3.3.5), glue (>= 1.6.1), htmltools (>= 0.5.2), magrittr (>=
+2.0.2), rlang (>= 1.0.1), sass (>= 0.4.0), scales (>= 1.1.1),
+stringr (>= 1.4.0), tibble (>= 3.1.6), tidyselect (>= 1.1.1)","covr, knitr, paletteer, testthat (>= 2.1.0), RColorBrewer,
+lubridate, rmarkdown, rvest, shiny, tidyr, webshot, xml2",https://cran.rstudio.com/src/contrib,"Build display tables from tabular data with an easy-to-use set of
     functions. With its progressive approach, we can construct display tables
     with a cohesive set of table parts. Table values can be formatted using any
     of the included formatting functions. Footnotes and cell styles can be 
@@ -796,7 +911,7 @@ rlang (>= 0.4.5), sass (>= 0.1.1), scales (>= 1.1.0), stringr
 (>= 1.3.1), tibble (>= 3.0.0), tidyselect (>= 1.0.0),
 paletteer, fontawesome, webshot","testthat (>= 2.1.0), RColorBrewer, rmarkdown, rvest, knitr,
 tidyr",https://github.com/jthomasmock/gtExtras,Provides utility functions and common use-cases applied via the gt package.
-gtools,3.9.2,,"car, gplots, knitr, rstudioapi, SGP, taxize",https://cran.rstudio.com/src/contrib,"Functions to assist in R programming, including:
+gtools,3.9.3,,"car, gplots, knitr, rstudioapi, SGP, taxize",https://cran.rstudio.com/src/contrib,"Functions to assist in R programming, including:
   - assist in developing, updating, and maintaining R and R packages ('ask', 'checkRVersion',
     'getDependencies', 'keywords', 'scat'),
   - calculate the logit and inverse logit transformations ('logit', 'inv.logit'),
@@ -840,8 +955,9 @@ spelling (>= 2.2), survey, survival (>= 3.2-11), testthat (>=
     regression and Cox proportional hazards regression, are automatically
     identified and the tables are pre-filled with appropriate column
     headers."
-haven,2.4.3,"forcats (>= 0.2.0), hms, methods, readr (>= 0.1.0), rlang (>=
-0.4.0), tibble, tidyselect, vctrs (>= 0.3.0)","cli, covr, crayon, fs, knitr, pillar (>= 1.4.0), rmarkdown,
+haven,2.5.0,"cli (>= 3.0.0), forcats (>= 0.2.0), hms, lifecycle, methods,
+readr (>= 0.1.0), rlang (>= 0.4.0), tibble, tidyselect, vctrs
+(>= 0.3.0)","covr, crayon, fs, knitr, pillar (>= 1.4.0), rmarkdown,
 testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Import foreign statistical formats into R via the embedded
     'ReadStat' C library, <https://github.com/WizardMac/ReadStat>."
 HDInterval,0.2.2,,coda,https://cran.rstudio.com/src/contrib,"A generic function and a set of methods to calculate highest density intervals for a variety of classes of objects which can specify a probability density distribution, including MCMC output, fitted density objects, and functions."
@@ -856,8 +972,8 @@ highr,0.9,xfun (>= 0.18),"knitr, markdown, testit",https://cran.rstudio.com/src/
 hms,1.1.1,"ellipsis (>= 0.3.2), lifecycle, methods, pkgconfig, rlang,
 vctrs (>= 0.3.8)","crayon, lubridate, pillar (>= 1.1.0), testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Implements an S3 class for storing and formatting time-of-day
     values, based on the 'difftime' class."
-htmltools,0.5.2,"utils, digest, grDevices, base64enc, rlang (>= 0.4.10),
-fastmap","markdown, testthat, withr, Cairo, ragg, shiny",https://cran.rstudio.com/src/contrib,Tools for HTML generation and output.
+htmltools,0.5.3,"utils, digest, grDevices, base64enc, rlang (>= 0.4.10),
+fastmap (>= 1.1.0)","markdown, testthat, withr, Cairo, ragg, shiny",https://cran.rstudio.com/src/contrib,Tools for HTML generation and output.
 htmlwidgets,1.5.4,"grDevices, htmltools (>= 0.3), jsonlite (>= 0.9.16), yaml","knitr (>= 1.8), rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"A framework for creating HTML widgets that render in various
     contexts including the R console, 'R Markdown' documents, and 'Shiny'
     web applications."
@@ -865,6 +981,12 @@ httpcode,0.3.0,,testthat,https://cran.rstudio.com/src/contrib,"Find and explain 
     Functions included for searching for codes by full or partial number,
     by message, and get appropriate dog and cat images for many
     status codes."
+httpgd,1.3.0,"later (>= 1.1.0), systemfonts (>= 1.0.0)","testthat, xml2 (>= 1.0.0), fontquiver (>= 0.2.0), knitr,
+rmarkdown",https://cran.rstudio.com/src/contrib,"A graphics device for R that is accessible via network protocols.
+    This package was created to make it easier to embed live R graphics in 
+    integrated development environments and other applications.
+    The included 'HTML/JavaScript' client (plot viewer) aims to provide a better overall user experience when dealing with R graphics.
+    The device asynchronously serves graphics via 'HTTP' and 'WebSockets'."
 httpuv,1.6.5,"Rcpp (>= 1.0.7), utils, R6, promises, later (>= 0.8.0)","testthat, callr, curl, websocket",https://cran.rstudio.com/src/contrib,"Provides low-level socket and protocol support for handling
     HTTP and WebSocket requests directly from within R. It is primarily
     intended as a building block for other packages, rather than making it
@@ -872,7 +994,7 @@ httpuv,1.6.5,"Rcpp (>= 1.0.7), utils, R6, promises, later (>= 0.8.0)","testthat,
     httpuv is built on top of the libuv and http-parser C libraries, both of
     which were developed by Joyent, Inc. (See LICENSE file for libuv and
     http-parser license information.)"
-httr,1.4.2,"curl (>= 3.0.0), jsonlite, mime, openssl (>= 0.8), R6","covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
+httr,1.4.3,"curl (>= 3.0.0), jsonlite, mime, openssl (>= 0.8), R6","covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat
 (>= 0.8.0), xml2",https://cran.rstudio.com/src/contrib,"Useful tools for working with HTTP organised by
     HTTP verbs (GET(), POST(), etc). Configuration functions make it easy
     to control additional request components (authenticate(),
@@ -885,12 +1007,22 @@ stopwords, rmarkdown",https://cran.rstudio.com/src/contrib,"Low level spell chec
     this package to automate checking of files, documentation and vignettes in all
     common formats."
 ids,1.0.1,"openssl, uuid","knitr, rcorpora, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,Generate random or human readable and pronounceable identifiers.
+igraph,1.3.4,"graphics, grDevices, magrittr, Matrix, pkgconfig (>= 2.0.0),
+rlang, stats, utils","ape, graph, igraphdata, rgl, scales, stats4, tcltk, testthat,
+withr, digest",https://cran.rstudio.com/src/contrib,"Routines for simple graphs and network analysis. It can
+  handle large graphs very well and provides functions for generating random
+  and regular graphs, graph visualization, centrality methods and much more."
 ini,0.3.1,,testthat,https://cran.rstudio.com/src/contrib,"Parse simple '.ini' configuration files to an structured list. Users
   can manipulate this resulting list with lapply() functions. This same
   structured list can be used to write back to file after modifications."
 ipred,0.9-12,"rpart (>= 3.1-8), MASS, survival, nnet, class, prodlim","mvtnorm, mlbench, TH.data, randomForest, party",https://cran.rstudio.com/src/contrib,"Improved predictive models by indirect classification and
   bagging for classification, regression and survival problems 
-  as well as resampling based estimators of prediction error. "
+  as well as resampling based estimators of prediction error."
+iptools,0.7.2,"Rcpp (>= 0.11.2), utils, stats, AsioHeaders, stringi,
+triebeard","testthat, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"A toolkit for manipulating, validating and testing 'IP' addresses and
+    ranges, along with datasets relating to 'IP' addresses. Tools are also provided
+    to map 'IPv4' blocks to country codes. While it primarily has support for the 'IPv4'
+    address space, more extensive 'IPv6' support is intended."
 isoband,0.2.5,"grid, utils","covr, ggplot2, knitr, magick, microbenchmark, rmarkdown, sf,
 testthat, xml2",https://cran.rstudio.com/src/contrib,"A fast C++ implementation to generate contour lines (isolines) and
   contour polygons (isobands) from regularly spaced grids containing elevation data."
@@ -932,8 +1064,8 @@ jqr,1.2.2,"magrittr, lazyeval","jsonlite, testthat",https://cran.rstudio.com/src
 jquerylib,0.1.4,htmltools,testthat,https://cran.rstudio.com/src/contrib,"Obtain any major version of 'jQuery' (<https://code.jquery.com/>) and use it in any webpage generated by 'htmltools' (e.g. 'shiny', 'htmlwidgets', and 'rmarkdown').
     Most R users don't need to use this package directly, but other R packages (e.g. 'shiny', 'rmarkdown', etc.) depend on this package to avoid bundling redundant copies of 'jQuery'."
 jsonify,1.2.1,Rcpp (>= 0.12.18),"covr, testthat, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Conversions between 'R' objects and Javascript Object Notation (JSON) using 
-    the 'rapidjsonr' library <https://CRAN.R-project.org/package=rapidjsonr>. "
-jsonlite,1.7.3,,"httr, curl, vctrs, testthat, knitr, rmarkdown, R.rsp, sf",https://cran.rstudio.com/src/contrib,"A reasonably fast JSON parser and generator, optimized for statistical 
+    the 'rapidjsonr' library <https://CRAN.R-project.org/package=rapidjsonr>."
+jsonlite,1.8.0,,"httr, curl, vctrs, testthat, knitr, rmarkdown, R.rsp, sf",https://cran.rstudio.com/src/contrib,"A reasonably fast JSON parser and generator, optimized for statistical 
     data and the web. Offers simple, flexible tools for working with JSON in R, and
     is particularly powerful for building pipelines and interacting with a web API. 
     The implementation is based on the mapping described in the vignette (Ooms, 2014).
@@ -947,6 +1079,12 @@ jsonvalidate,1.3.2,V8,"knitr, jsonlite, rmarkdown, testthat, withr",https://cran
 KernSmooth,2.23-20,,"MASS, carData",https://cran.rstudio.com/src/contrib,"Functions for kernel smoothing (and density estimation)
   corresponding to the book: 
   Wand, M.P. and Jones, M.C. (1995) ""Kernel Smoothing""."
+keypress,1.2.0,,,https://cran.rstudio.com/src/contrib,"Wait for a single key press at the 'R' prompt.
+    This works in terminals, but does not currently work
+    in the 'Windows' 'GUI', the 'OS X' 'GUI' ('R.app'),
+    in 'Emacs' 'ESS', in an 'Emacs' shell buffer or in
+    'R Studio'. In these cases 'keypress' stops with an
+    error message."
 keyring,1.3.0,"assertthat, askpass, openssl, R6, utils, sodium, yaml,
 filelock, rappdirs, tools","callr, covr, mockery, testthat, withr",https://cran.rstudio.com/src/contrib,"Platform independent 'API' to access the operating system's
     credential store. Currently supports: 'Keychain' on 'macOS', Credential
@@ -955,8 +1093,8 @@ filelock, rappdirs, tools","callr, covr, mockery, testthat, withr",https://cran.
     Additional storage back-ends can be added easily."
 keyringr,0.4.0,stringr,"knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Decrypts passwords stored in the Gnome Keyring, macOS Keychain and
     strings encrypted with the Windows Data Protection API."
-knitr,1.37,"evaluate (>= 0.10), highr, methods, stringr (>= 0.6), yaml (>=
-2.1.19), xfun (>= 0.27), tools","markdown, formatR, testit, digest, rgl (>= 0.95.1201),
+knitr,1.39,"evaluate (>= 0.15), highr, methods, stringr (>= 0.6), yaml (>=
+2.1.19), xfun (>= 0.29), tools","markdown, formatR, testit, digest, rgl (>= 0.95.1201),
 codetools, rmarkdown, htmlwidgets (>= 0.7), webshot, tikzDevice
 (>= 0.10), tinytex, reticulate (>= 1.4), JuliaCall (>= 0.11.1),
 magick, png, jpeg, gifski, xml2 (>= 1.2.0), httr, DBI (>=
@@ -970,7 +1108,7 @@ spelling",https://cran.rstudio.com/src/contrib,"Work with labelled data imported
     or 'Stata' with 'haven' or 'foreign'. This package
     provides useful functions to deal with ""haven_labelled"" and
     ""haven_labelled_spss"" classes introduced by 'haven' package."
-languageserver,0.3.12,"callr (>= 3.0.0), collections (>= 0.3.0), fs (>= 1.3.1),
+languageserver,0.3.13,"callr (>= 3.0.0), collections (>= 0.3.0), fs (>= 1.3.1),
 jsonlite (>= 1.6), lintr (>= 2.0.1), parallel, R6 (>= 2.4.1),
 roxygen2 (>= 7.0.0), stringi (>= 1.1.7), styler (>= 1.5.1),
 tools, utils, xml2 (>= 1.2.2), xmlparsedata (>= 1.0.3)","covr (>= 3.4.0), magrittr (>= 1.5), mockery (>= 0.4.2),
@@ -1012,12 +1150,18 @@ lifecycle,1.0.1,"glue, rlang (>= 0.4.10)","covr, crayon, lintr, tidyverse, knitr
 (>= 3.0.1), tools, tibble, vctrs",https://cran.rstudio.com/src/contrib,"Manage the life cycle of your exported functions
     with shared conventions, documentation badges, and user-friendly
     deprecation warnings."
-lintr,2.0.1,"rex, crayon, codetools, cyclocomp, testthat (>= 2.2.1),
-digest, rstudioapi (>= 0.2), httr (>= 1.2.1), jsonlite, knitr,
-stats, utils, xml2 (>= 1.0.0), xmlparsedata (>= 1.0.3)","rmarkdown, mockery",https://cran.rstudio.com/src/contrib,"Checks adherence to a given style, syntax errors and possible
+lintr,3.0.0,"rex, crayon, codetools, cyclocomp, digest, glue, jsonlite,
+knitr, stats, utils, xml2 (>= 1.0.0), xmlparsedata (>= 1.0.3),
+backports","covr, httr (>= 1.2.1), mockery, patrick, pkgdown, rmarkdown,
+rstudioapi (>= 0.2), testthat (>= 3.0.0), tibble, withr",https://cran.rstudio.com/src/contrib,"Checks adherence to a given style, syntax errors and possible
     semantic issues.  Supports on the fly checking of R code edited with 'RStudio IDE', 'Emacs',
     'Vim', 'Sublime Text' and 'Atom'."
 listenv,0.8.0,,"R.utils, R.rsp, markdown",https://cran.rstudio.com/src/contrib,"List environments are environments that have list-like properties.  For instance, the elements of a list environment are ordered and can be accessed and iterated over using index subsetting, e.g. 'x <- listenv(a = 1, b = 2); for (i in seq_along(x)) x[[i]] <- x[[i]] ^ 2; y <- as.list(x)'."
+listviewer,3.0.0,"htmltools, htmlwidgets, shiny","jsonlite, miniUI, rstudioapi",https://cran.rstudio.com/src/contrib,"R lists, especially nested lists, can be very difficult to
+    visualize or represent. Sometimes 'str()' is not enough, so this suite of
+    htmlwidgets is designed to help see, understand, and maybe even modify your R
+    lists.  The function 'reactjson()' requires a package
+    'reactR' that can be installed from CRAN or <https://github.com/timelyportfolio/reactR>."
 lme4,1.1-27.1,"graphics, grid, splines, utils, parallel, MASS, lattice, boot,
 nlme (>= 3.1-123), minqa (>= 1.1.15), nloptr (>= 1.0.4)","knitr, rmarkdown, PKPDmodels, MEMSS, testthat (>= 0.8.1),
 ggplot2, mlmRev, optimx (>= 2013.8.6), gamm4, pbkrtest, HSAUR3,
@@ -1028,7 +1172,7 @@ numDeriv, car, dfoptim, mgcv, statmod, rr2, semEff",https://cran.rstudio.com/src
 lmtest,0.9-39,graphics,"car, strucchange, sandwich, dynlm, stats4, survival, AER",https://cran.rstudio.com/src/contrib,"A collection of tests, data sets, and examples
  for diagnostic checking in linear regression models. Furthermore,
  some generic tools for inference in parametric models are provided."
-lobstr,1.1.1,"crayon, Rcpp, rlang (>= 0.3.0)","covr, pillar, pkgdown, testthat",https://cran.rstudio.com/src/contrib,"A set of tools for inspecting and understanding R data
+lobstr,1.1.2,"crayon, methods, prettyunits, rlang (>= 1.0.0)","covr, pillar, pkgdown, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"A set of tools for inspecting and understanding R data
     structures inspired by str(). Includes ast() for visualizing abstract 
     syntax trees, ref() for showing shared references, cst() for showing 
     call stack trees, and obj_size() for computing object sizes."
@@ -1052,9 +1196,9 @@ rsvg, webp, pdftools, ggplot2, gapminder, IRdisplay, tesseract
     the console, resulting in an interactive editing environment. The latest 
     version of the package includes a native graphics device for creating 
     in-memory graphics or drawing onto images using pixel coordinates."
-magrittr,2.0.1,,"covr, knitr, rlang, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"Provides a mechanism for chaining commands with a
-    new forward-pipe operator, %>%. This operator will forward a value, or
-    the result of an expression, into the next function call/expression.
+magrittr,2.0.3,,"covr, knitr, rlang, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"Provides a mechanism for chaining commands with a new
+    forward-pipe operator, %>%. This operator will forward a value, or the
+    result of an expression, into the next function call/expression.
     There is flexible support for the type of right-hand side expressions.
     For more information, see package vignette.  To quote Rene Magritte,
     ""Ceci n'est pas un pipe."""
@@ -1069,9 +1213,9 @@ markdown,1.1,"utils, xfun, mime (>= 0.3)","knitr, RCurl",https://cran.rstudio.co
     (<https://github.com/vmg/sundown>). Markdown is a plain-text formatting
     syntax that can be converted to 'XHTML' or other formats. See
     <http://en.wikipedia.org/wiki/Markdown> for more information about Markdown."
-MASS,7.3-55,methods,"lattice, nlme, nnet, survival",https://cran.rstudio.com/src/contrib,"Functions and datasets to support Venables and Ripley,
+MASS,7.3-58,methods,"lattice, nlme, nnet, survival, gamair",https://cran.rstudio.com/src/contrib,"Functions and datasets to support Venables and Ripley,
   ""Modern Applied Statistics with S"" (4th edition, 2002)."
-Matrix,1.4-0,"methods, graphics, grid, stats, utils, lattice","expm, MASS",https://cran.rstudio.com/src/contrib,"A rich hierarchy of matrix classes, including triangular,
+Matrix,1.4-1,"methods, graphics, grid, stats, utils, lattice","expm, MASS",https://cran.rstudio.com/src/contrib,"A rich hierarchy of matrix classes, including triangular,
    symmetric, and diagonal matrices, both dense and sparse and with
    pattern, logical and numeric entries.   Numerous methods for and
    operations on these matrices, using 'LAPACK' and 'SuiteSparse' libraries."
@@ -1083,7 +1227,7 @@ memoise,2.0.1,"rlang (>= 0.4.10), cachem","digest, aws.s3, covr, googleAuthR, go
 testthat",https://cran.rstudio.com/src/contrib,"Cache the results of a function so that when you
     call it again with the same arguments it returns the previously computed
     value."
-mgcv,1.8-38,"methods, stats, graphics, Matrix, splines, utils","parallel, survival, MASS",https://cran.rstudio.com/src/contrib,"Generalized additive (mixed) models, some of their extensions and 
+mgcv,1.8-40,"methods, stats, graphics, Matrix, splines, utils","parallel, survival, MASS",https://cran.rstudio.com/src/contrib,"Generalized additive (mixed) models, some of their extensions and 
              other generalized ridge regression with multiple smoothing 
              parameter estimation by (Restricted) Marginal Likelihood, 
              Generalized Cross Validation and similar, or using iterated 
@@ -1091,13 +1235,15 @@ mgcv,1.8-38,"methods, stats, graphics, Matrix, splines, utils","parallel, surviv
              Wood (2017) <doi:10.1201/9781315370279> for an overview. 
              Includes a gam() function, a wide variety of smoothers, 'JAGS' 
              support and distributions beyond the exponential family. "
-Microsoft365R,2.3.2,"AzureAuth, AzureGraph (>= 1.3.1), utils, curl, httr, jsonlite,
+Microsoft365R,2.3.4,"AzureAuth, AzureGraph (>= 1.3.1), utils, curl, httr, jsonlite,
 R6, vctrs, mime","openssl, knitr, rmarkdown, testthat, blastula, emayili",https://cran.rstudio.com/src/contrib,"An interface to the 'Microsoft 365' (formerly known as 'Office 365') suite of cloud services, building on the framework supplied by the 'AzureGraph' package. Enables access from R to data stored in 'Teams', 'SharePoint Online' and 'OneDrive', including the ability to list drive folder contents, upload and download files, send messages, and retrieve data lists. Also provides a full-featured 'Outlook' email client, with the ability to send emails and manage emails and mail folders."
 mime,0.12,tools,,https://cran.rstudio.com/src/contrib,"Guesses the MIME type from a filename extension using the data
     derived from /etc/mime.types in UNIX-type systems."
 mindthegap,1.0.0,"magrittr, dplyr, tidyr, glue, googlesheets4, usethis, readr,
 forcats, scales, vroom, ggplot2, extrafont, extrafontdb,
-gridExtra, stringr, grDevices, utils, purrr, rlang, tidyselect","googledrive, devtools",https://github.com/USAID-OHA-SI/mindthegap,Package to pull UNAIDS estimates as well as plot trends in UNAIDS 90-90-90 goals and ART coverage gap by country.
+gridExtra, stringr, grDevices, utils, purrr, rlang, tidyselect","googledrive, devtools, knitr, rmarkdown","https://github.com/USAID-OHA-SI/mindthegap,
+https://usaid-oha-si.github.io/mindthegap,
+https://usaid-oha-si.github.io/mindthegap/",Package to pull UNAIDS estimates as well as plot trends in UNAIDS 90-90-90 goals and ART coverage gap by country.
 miniUI,0.1.1.1,"shiny (>= 0.13), htmltools (>= 0.3), utils",,https://cran.rstudio.com/src/contrib,"Provides UI widget and layout functions for writing Shiny apps
     that work well on small screens."
 minqa,1.2.4,Rcpp (>= 0.9.10),,https://cran.rstudio.com/src/contrib,"Derivative-free optimization by quadratic approximation
@@ -1116,7 +1262,7 @@ munsell,0.5.0,"colorspace, methods","ggplot2, testthat",https://cran.rstudio.com
     for use directly in R graphics. Also provides utilities 
     to explore slices through the Munsell colour tree, to transform 
     Munsell colours and display colour palettes."
-nlme,3.1-155,"graphics, stats, utils, lattice","Hmisc, MASS",https://cran.rstudio.com/src/contrib,Fit and compare Gaussian linear and nonlinear mixed-effects models.
+nlme,3.1-158,"graphics, stats, utils, lattice","Hmisc, MASS, SASmixed",https://cran.rstudio.com/src/contrib,Fit and compare Gaussian linear and nonlinear mixed-effects models.
 nloptr,1.2.2.3,,"testthat (>= 0.8.1), knitr, rmarkdown, inline (>= 0.3.14)",https://cran.rstudio.com/src/contrib,"
     Solve optimization problems using an R interface to NLopt. NLopt is a 
     free/open-source library for nonlinear optimization, providing a common
@@ -1139,11 +1285,11 @@ numDeriv,2016.8-1.1,,,https://cran.rstudio.com/src/contrib,"Methods for calculat
 	method is also provided. Simple difference is (usually) less accurate
 	but is much quicker than 'Richardson''s' extrapolation and provides a 
 	useful cross-check. 
-	Methods are provided for real scalar and vector valued functions. "
+	Methods are provided for real scalar and vector valued functions."
 odbc,1.3.3,"bit64, blob (>= 1.2.0), DBI (>= 1.0.0), hms, methods, rlang,
 Rcpp (>= 0.12.11)","covr, DBItest, magrittr, RSQLite, testthat, tibble",https://cran.rstudio.com/src/contrib,A DBI-compatible interface to ODBC databases.
-openssl,1.4.6,askpass,"testthat (>= 2.1.0), digest, knitr, rmarkdown, jsonlite,
-jose, sodium",https://cran.rstudio.com/src/contrib,"Bindings to OpenSSL libssl and libcrypto, plus custom SSH key parsers.
+openssl,2.0.2,askpass,"curl, testthat (>= 2.1.0), digest, knitr, rmarkdown,
+jsonlite, jose, sodium",https://cran.rstudio.com/src/contrib,"Bindings to OpenSSL libssl and libcrypto, plus custom SSH key parsers.
     Supports RSA, DSA and EC curves P-256, P-384, P-521, and curve25519. Cryptographic
     signatures can either be created and verified manually or via x509 certificates. 
     AES can be used in cbc, ctr or gcm mode for symmetric encryption; RSA for asymmetric
@@ -1159,7 +1305,8 @@ openxlsx,4.2.5,"grDevices, methods, Rcpp, stats, stringi, utils, zip","knitr, rm
     dependency on Java."
 orcutt,2.3,stats,,https://cran.rstudio.com/src/contrib,Solve first order autocorrelation problems using an iterative method. This procedure estimates both autocorrelation and beta coefficients recursively until we reach the convergence (8th decimal as default). The residuals are computed after estimating Beta using EGLS approach and Rho is estimated using the previous residuals.
 packcircles,0.3.4,Rcpp (>= 1.0.0),"ggiraph, ggplot2, knitr, rmarkdown, lpSolve",https://cran.rstudio.com/src/contrib,Algorithms to find arrangements of non-overlapping circles.
-paint,0.1.0,"crayon, pryr, purrr, RColorBrewer, utils, vctrs, viridisLite","spData, tibble, tsibble, data.table, sf, testthat (>= 3.0.0),
+paint,0.1.4,"crayon, keypress, pryr, purrr, RColorBrewer, utils, vctrs,
+viridisLite","spData, tibble, tsibble, data.table, sf, testthat (>= 3.0.0),
 dplyr, tidyr, palmerpenguins, rlang",https://github.com/MilesMcBain/paint-,"Provides an alternative to the print() methods provided by the authors
   of `data.frame` objects: `tibble`, `sf`, `data.table`, `data.frame`."
 paletteer,1.4.0,"prismatic, rematch2, rlang, rstudioapi","covr, gameofthrones (>= 1.0.0), ggplot2 (>= 3.3.0), ggthemes
@@ -1169,7 +1316,7 @@ viridisLite",https://cran.rstudio.com/src/contrib,"The choices of color palettes
     overwhelming with palettes spread over many packages with many
     different API's. This packages aims to collect all color palettes
     across the R ecosystem under the same package with a streamlined API."
-palmerpenguins,0.1.0,,"knitr, rmarkdown, tibble, ggplot2, dplyr, tidyr, recipes",https://cran.rstudio.com/src/contrib,"Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) Program."
+palmerpenguins,0.1.0,,"knitr, rmarkdown, tibble, ggplot2, dplyr, tidyr, recipes",https://cran.rstudio.com/src/contrib,"Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) Program. "
 parallelly,1.30.0,"parallel, tools, utils",,https://cran.rstudio.com/src/contrib,"Utility functions that enhance the 'parallel' package and support the built-in parallel backends of the 'future' package.  For example, availableCores() gives the number of CPU cores available to your R process as given by the operating system, 'cgroups' and Linux containers, R options, and environment variables, including those set by job schedulers on high-performance compute clusters. If none is set, it will fall back to parallel::detectCores(). Another example is makeClusterPSOCK(), which is backward compatible with parallel::makePSOCKcluster() while doing a better job in setting up remote cluster workers without the need for configuring the firewall to do port-forwarding to your local computer."
 patchwork,1.1.1,"ggplot2 (>= 3.0.0), gtable, grid, stats, grDevices, utils,
 graphics","knitr, rmarkdown, gridGraphics, gridExtra, ragg, testthat (>=
@@ -1192,11 +1339,22 @@ numDeriv, parallel, knitr",,https://cran.rstudio.com/src/contrib,"Test in mixed 
     paper by Halehoh and Højsgaard, (2012,
     <doi:10.18637/jss.v059.i09>).  Please see 'citation(""pbkrtest"")'
     for citation details."
-pillar,1.6.4,"cli, crayon (>= 1.3.4), ellipsis (>= 0.3.2), fansi, lifecycle,
-rlang (>= 0.3.0), utf8 (>= 1.1.0), utils, vctrs (>= 0.3.8)","bit64, debugme, DiagrammeR, dplyr, formattable, ggplot2,
-knitr, lubridate, nycflights13, palmerpenguins, rmarkdown,
-scales, stringi, survival, testthat (>= 3.0.2), tibble, units
-(>= 0.7.2), withr",https://cran.rstudio.com/src/contrib,"Provides 'pillar' and 'colonnade' generics designed
+piggyback,0.1.4,"cli, glue, gh, httr, jsonlite, fs, lubridate, memoise","spelling, readr, covr, testthat, knitr, rmarkdown, gert,
+withr, magrittr",https://cran.rstudio.com/src/contrib,"Because larger (> 50 MB) data files cannot easily be committed to git,
+  a different approach is required to manage data associated with an analysis in a 
+  GitHub repository.  This package provides a simple work-around by allowing larger
+  (up to 2 GB) data files to piggyback on a repository as assets attached to individual
+  GitHub releases.  These files are not handled by git in any way, but instead are
+  uploaded, downloaded, or edited directly by calls through the GitHub API. These
+  data files can be versioned manually by creating different releases.  This approach
+  works equally well with public or private repositories.  Data can be uploaded
+  and downloaded programmatically from scripts. No authentication is required to
+  download data from public repositories."
+pillar,1.8.0,"cli (>= 2.3.0), fansi, glue, lifecycle, rlang (>= 1.0.2), utf8
+(>= 1.1.0), utils, vctrs (>= 0.3.8)","bit64, debugme, DiagrammeR, dplyr, formattable, ggplot2,
+knitr, lubridate, nanotime, nycflights13, palmerpenguins,
+rmarkdown, scales, stringi, survival, testthat (>= 3.1.1),
+tibble, units (>= 0.7.2), vdiffr, withr",https://cran.rstudio.com/src/contrib,"Provides 'pillar' and 'colonnade' generics designed
     for formatting columns of data using the full range of colours
     provided by modern terminals."
 piton,1.0.0,Rcpp,testthat,https://cran.rstudio.com/src/contrib,"A wrapper around the 'Parsing Expression Grammar Template Library', a C++11 library for generating
@@ -1209,24 +1367,25 @@ rprojroot, withr (>= 2.3.0)","Rcpp, cpp11, testthat, covr",https://cran.rstudio.
 pkgconfig,2.0.3,utils,"covr, testthat, disposables (>= 1.0.3)",https://cran.rstudio.com/src/contrib,"Set configuration options on a per-package basis.
     Options set by a given package only apply to that package,
     other packages are unaffected."
-pkgdown,2.0.2,"bslib (>= 0.3.1), callr (>= 2.0.2), crayon, desc, digest,
-downlit (>= 0.4.0), fs (>= 1.4.0), httr (>= 1.4.2), jsonlite,
-magrittr, memoise, purrr, ragg, rlang (>= 0.4.0), rmarkdown (>=
+pkgdown,2.0.6,"bslib (>= 0.3.1), callr (>= 2.0.2), cli, desc, digest, downlit
+(>= 0.4.0), fs (>= 1.4.0), httr (>= 1.4.2), jsonlite, magrittr,
+memoise, purrr, ragg, rlang (>= 1.0.0), rmarkdown (>=
 1.1.9007), tibble, whisker, withr (>= 2.4.3), xml2 (>= 1.3.1),
 yaml","covr, diffviewer, evaluate, htmltools, htmlwidgets, knitr,
 lifecycle, methods, openssl, pkgload (>= 1.0.2), rsconnect,
-rstudioapi, rticles, sass, testthat (>= 3.0.0), tools",https://cran.rstudio.com/src/contrib,"Generate an attractive and useful website from a source
+rstudioapi, rticles, sass, testthat (>= 3.1.3), tools",https://cran.rstudio.com/src/contrib,"Generate an attractive and useful website from a source
     package.  'pkgdown' converts your documentation, vignettes, 'README',
     and more to 'HTML' making it easy to share information about your
     package online."
-pkgload,1.2.4,"cli, crayon, desc, methods, rlang, rprojroot, rstudioapi,
-utils, withr","bitops, covr, pkgbuild, Rcpp, testthat",https://cran.rstudio.com/src/contrib,"Simulates the process of installing a package and then
+pkgload,1.3.0,"cli (>= 3.3.0), crayon, desc, fs, glue, methods, rlang (>=
+1.0.3), rprojroot, utils, withr (>= 2.4.3)","bitops, covr, mathjaxr, pak, pkgbuild, Rcpp, remotes,
+rstudioapi, testthat (>= 3.1.0)",https://cran.rstudio.com/src/contrib,"Simulates the process of installing a package and then
     attaching it. This is a key part of the 'devtools' package as it
     allows you to rapidly iterate while developing a package."
 plogr,0.2.0,,Rcpp,https://cran.rstudio.com/src/contrib,"
   A simple header-only logging library for C++.
   Add 'LinkingTo: plogr' to 'DESCRIPTION', and '#include <plogr.h>' in your C++ modules to use it."
-plyr,1.8.6,Rcpp (>= 0.11.0),"abind, covr, doParallel, foreach, iterators, itertools,
+plyr,1.8.7,Rcpp (>= 0.11.0),"abind, covr, doParallel, foreach, iterators, itertools,
 tcltk, testthat",https://cran.rstudio.com/src/contrib,"A set of tools that solves a common set of
     problems: you need to break a big problem down into manageable pieces,
     operate on each piece and then put all the pieces back together.  For
@@ -1249,8 +1408,8 @@ prismatic,1.1.0,"graphics, farver (>= 2.0.1), grDevices","covr, crayon, testthat
     low-dependency and functional way."
 pROC,1.18.0,"methods, plyr, Rcpp (>= 0.11.1)","microbenchmark, tcltk, MASS, logcondens, doParallel,
 testthat, vdiffr, ggplot2",https://cran.rstudio.com/src/contrib,"Tools for visualizing, smoothing and comparing receiver operating characteristic (ROC curves). (Partial) area under the curve (AUC) can be compared with statistical tests based on U-statistics or bootstrap. Confidence intervals can be computed for (p)AUC or ROC curves."
-processx,3.5.2,"ps (>= 1.2.0), R6, utils","callr (>= 3.2.0), cli, codetools, covr, curl, debugme,
-parallel, testthat, withr",https://cran.rstudio.com/src/contrib,"Tools to run system processes in the background.
+processx,3.7.0,"ps (>= 1.2.0), R6, utils","callr (>= 3.7.0), cli (>= 3.3.0), codetools, covr, curl,
+debugme, parallel, rlang (>= 1.0.2), testthat (>= 3.0.0), withr",https://cran.rstudio.com/src/contrib,"Tools to run system processes in the background.
     It can check if a background process is running; wait on a background
     process to finish; get the exit status of finished processes; kill
     background processes. It can read the standard output and error of
@@ -1261,6 +1420,7 @@ prodlim,2019.11.13,"Rcpp (>= 0.11.5), stats, grDevices, graphics, survival,
 KernSmooth, lava",,https://cran.rstudio.com/src/contrib,"Fast and user friendly implementation of nonparametric estimators
     for censored event history (survival) analysis. Kaplan-Meier and
     Aalen-Johansen method."
+profmem,0.6.0,utils,"R.rsp, markdown, microbenchmark",https://cran.rstudio.com/src/contrib,"A simple and light-weight API for memory profiling of R expressions.  The profiling is built on top of R's built-in memory profiler ('utils::Rprofmem()'), which records every memory allocation done by R (also native code)."
 progress,1.2.2,"hms, prettyunits, R6, crayon","Rcpp, testthat, withr",https://cran.rstudio.com/src/contrib,"Configurable Progress bars, they may include percentage,
     elapsed time, and/or the estimated completion time. They work in
     terminals, in 'Emacs' 'ESS', 'RStudio', 'Windows' 'Rgui' and the
@@ -1284,11 +1444,11 @@ protolite,2.1.1,"Rcpp (>= 0.12.12), jsonlite","spelling, curl, testthat, RProtoB
     hence the entire serialization is optimized at compile time. The 'RProtoBuf' 
     package on the other hand uses the protobuf runtime library to provide a general-
     purpose toolkit for reading and writing arbitrary protocol-buffer data in R."
-proxy,0.4-26,"stats, utils",cba,https://cran.rstudio.com/src/contrib,"Provides an extensible framework for the efficient calculation of auto- and cross-proximities, along with implementations of the most popular ones. "
+proxy,0.4-27,"stats, utils",cba,https://cran.rstudio.com/src/contrib,"Provides an extensible framework for the efficient calculation of auto- and cross-proximities, along with implementations of the most popular ones. "
 pryr,0.1.5,"stringr, codetools, methods, Rcpp (>= 0.11.0), lobstr",testthat (>= 0.8.0),https://cran.rstudio.com/src/contrib,"Useful tools to pry back the covers of R and understand the
     language at a deeper level."
-ps,1.6.0,utils,"callr, covr, curl, pingr, processx (>= 3.1.0), R6, rlang,
-testthat, tibble",https://cran.rstudio.com/src/contrib,"List, query and manipulate all system processes, on 'Windows',
+ps,1.7.1,utils,"callr, covr, curl, pillar, pingr, processx (>= 3.1.0), R6,
+rlang, testthat (>= 3.0.0),",https://cran.rstudio.com/src/contrib,"List, query and manipulate all system processes, on 'Windows',
     'Linux' and 'macOS'."
 purrr,0.3.4,"magrittr (>= 1.5), rlang (>= 0.3.1)","covr, crayon, dplyr (>= 0.7.8), knitr, rmarkdown, testthat,
 tibble, tidyselect",https://cran.rstudio.com/src/contrib,"A complete and consistent functional programming
@@ -1306,28 +1466,28 @@ Formula, zoo, R.rsp",https://cran.rstudio.com/src/contrib,"Estimation and infere
   for conditional quantiles of a univariate response and several methods for handling
   censored survival data.  Portfolio selection methods based on expected shortfall
   risk are also now included. See Koenker (2006) <doi:10.1017/CBO9780511754098> and
-  Koenker et al. (2017) <doi:10.1201/9781315120256>. "
-R.cache,0.15.0,"utils, R.methodsS3 (>= 1.8.1), R.oo (>= 1.24.0), R.utils (>=
+  Koenker et al. (2017) <doi:10.1201/9781315120256>."
+R.cache,0.16.0,"utils, R.methodsS3 (>= 1.8.1), R.oo (>= 1.24.0), R.utils (>=
 2.10.1), digest (>= 0.6.13)",,https://cran.rstudio.com/src/contrib,"Memoization can be used to speed up repetitive and computational expensive function calls.  The first time a function that implements memoization is called the results are stored in a cache memory.  The next time the function is called with the same set of parameters, the results are momentarily retrieved from the cache avoiding repeating the calculations.  With this package, any R object can be cached in a key-value storage where the key can be an arbitrary set of R objects.  The cache memory is persistent (on the file system)."
-R.methodsS3,1.8.1,utils,codetools,https://cran.rstudio.com/src/contrib,"Methods that simplify the setup of S3 generic functions and S3 methods.  Major effort has been made in making definition of methods as simple as possible with a minimum of maintenance for package developers.  For example, generic functions are created automatically, if missing, and naming conflict are automatically solved, if possible.  The method setMethodS3() is a good start for those who in the future may want to migrate to S4.  This is a cross-platform package implemented in pure R that generates standard S3 methods."
-R.oo,1.24.0,"methods, utils",tools,https://cran.rstudio.com/src/contrib,Methods and classes for object-oriented programming in R with or without references.  Large effort has been made on making definition of methods as simple as possible with a minimum of maintenance for package developers.  The package has been developed since 2001 and is now considered very stable.  This is a cross-platform package implemented in pure R that defines standard S3 classes without any tricks.
-R.utils,2.11.0,"methods, utils, tools, R.methodsS3 (>= 1.8.1)",digest (>= 0.6.10),https://cran.rstudio.com/src/contrib,Utility functions useful when programming and developing R packages.
+R.methodsS3,1.8.2,utils,codetools,https://cran.rstudio.com/src/contrib,"Methods that simplify the setup of S3 generic functions and S3 methods.  Major effort has been made in making definition of methods as simple as possible with a minimum of maintenance for package developers.  For example, generic functions are created automatically, if missing, and naming conflict are automatically solved, if possible.  The method setMethodS3() is a good start for those who in the future may want to migrate to S4.  This is a cross-platform package implemented in pure R that generates standard S3 methods."
+R.oo,1.25.0,"methods, utils",tools,https://cran.rstudio.com/src/contrib,Methods and classes for object-oriented programming in R with or without references.  Large effort has been made on making definition of methods as simple as possible with a minimum of maintenance for package developers.  The package has been developed since 2001 and is now considered very stable.  This is a cross-platform package implemented in pure R that defines standard S3 classes without any tricks.
+R.utils,2.12.0,"methods, utils, tools, R.methodsS3 (>= 1.8.1)","datasets, digest (>= 0.6.10)",https://cran.rstudio.com/src/contrib,Utility functions useful when programming and developing R packages.
 R6,2.5.1,,"testthat, pryr",https://cran.rstudio.com/src/contrib,"Creates classes with reference semantics, similar to R's built-in
     reference classes. Compared to reference classes, R6 classes are simpler
     and lighter-weight, and they are not built on S4 classes so they do not
     require the methods package. These classes allow public and private
     members, and they support inheritance, even when the classes are defined in
     different packages."
-ragg,1.2.1,"systemfonts (>= 1.0.3), textshaping (>= 0.3.0)","covr, testthat, grid, graphics",https://cran.rstudio.com/src/contrib,"Anti-Grain Geometry (AGG) is a high-quality and high-performance
+ragg,1.2.2,"systemfonts (>= 1.0.3), textshaping (>= 0.3.0)","covr, testthat, grid, graphics",https://cran.rstudio.com/src/contrib,"Anti-Grain Geometry (AGG) is a high-quality and high-performance
     2D drawing library. The 'ragg' package provides a set of graphic devices 
     based on AGG to use as alternative to the raster devices provided through
     the 'grDevices' package."
-rapidjsonr,1.2.0,,,https://cran.rstudio.com/src/contrib,Provides JSON parsing capability through the 'Rapidjson' 'C++' header-only library. 
+rapidjsonr,1.2.0,,,https://cran.rstudio.com/src/contrib,Provides JSON parsing capability through the 'Rapidjson' 'C++' header-only library.
 rappdirs,0.3.3,,"roxygen2, testthat (>= 3.0.0), covr, withr",https://cran.rstudio.com/src/contrib,"An easy way to determine which directories on the
     users computer you should use to save data, caches and logs. A port of
     Python's 'Appdirs' (<https://github.com/ActiveState/appdirs>) to
     R."
-raster,3.5-11,"Rcpp, methods, terra (>= 1.4-11)","rgdal (>= 1.5-23), rgeos (>= 0.5-3), ncdf4, igraph, tcltk,
+raster,3.5-21,"Rcpp, methods, terra (>= 1.5-12)","rgdal (>= 1.5-23), rgeos (>= 0.5-3), ncdf4, igraph, tcltk,
 parallel, rasterVis, MASS, sf, tinytest, gstat, fields,
 exactextractr",https://cran.rstudio.com/src/contrib,"Reading, writing, manipulating, analyzing and modeling of spatial data. The package implements basic and high-level functions for raster data and for vector data operations such as intersections. See the manual and tutorials on <https://rspatial.org/> to get started."
 rcmdcheck,1.4.0,"callr (>= 3.1.1.9000), cli (>= 3.0.0), curl, desc (>= 1.2.0),
@@ -1336,9 +1496,9 @@ digest, pkgbuild, prettyunits, R6, rprojroot, sessioninfo (>=
 testthat, webfakes",https://cran.rstudio.com/src/contrib,"Run 'R CMD check' from 'R' and capture the results
     of the individual checks. Supports running checks in the background,
     timeouts, pretty printing and comparing check results."
-RColorBrewer,1.1-2,,,https://cran.rstudio.com/src/contrib,"Provides color schemes for maps (and other graphics)
+RColorBrewer,1.1-3,,,https://cran.rstudio.com/src/contrib,"Provides color schemes for maps (and other graphics)
         designed by Cynthia Brewer as described at http://colorbrewer2.org"
-Rcpp,1.0.8,"methods, utils","tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",https://cran.rstudio.com/src/contrib,"The 'Rcpp' package provides R functions as well as C++ classes which
+Rcpp,1.0.9,"methods, utils","tinytest, inline, rbenchmark, pkgKitten (>= 0.1.2)",https://cran.rstudio.com/src/contrib,"The 'Rcpp' package provides R functions as well as C++ classes which
  offer a seamless integration of R and C++. Many R data types and objects can be
  mapped back and forth to C++ equivalents which facilitates both writing of new
  code as well as easier integration of third-party libraries. Documentation
@@ -1374,7 +1534,7 @@ RcppEigen,0.3.3.9.1,"Matrix (>= 1.1-0), Rcpp (>= 0.11.0), stats, utils","inline,
  (version 2); earlier version were licensed under the GNU LGPL version 3 or
  later. 'RcppEigen' (the 'Rcpp' bindings/bridge to 'Eigen') is licensed under
  the GNU GPL version 2 or later, as is the rest of 'Rcpp'."
-RCurl,1.98-1.5,bitops,XML,https://cran.rstudio.com/src/contrib,"A wrapper for 'libcurl' <https://curl.se/libcurl/>
+RCurl,1.98-1.8,bitops,XML,https://cran.rstudio.com/src/contrib,"A wrapper for 'libcurl' <https://curl.se/libcurl/>
 	Provides functions to allow one to compose general HTTP requests
         and provides convenient functions to fetch URIs, get & post
         forms, etc. and process the results returned by the Web server.
@@ -1385,13 +1545,18 @@ RCurl,1.98-1.5,bitops,XML,https://cran.rstudio.com/src/contrib,"A wrapper for 'l
         robust and extensive, supporting FTP/FTPS/TFTP (uploads and
         downloads), SSL/HTTPS, telnet, dict, ldap, and also supports
         cookies, redirects, authentication, etc."
-readr,2.1.1,"cli, clipr, crayon, hms (>= 0.4.1), methods, rlang, R6,
-tibble, vroom (>= 1.5.6), utils, lifecycle (>= 0.2.0)","datasets, covr, curl, knitr, rmarkdown, spelling, stringi,
-testthat, tzdb (>= 0.1.1), waldo, withr, xml2",https://cran.rstudio.com/src/contrib,"The goal of 'readr' is to provide a fast and
-    friendly way to read rectangular data (like 'csv', 'tsv', and 'fwf').
-    It is designed to flexibly parse many types of data found in the wild,
-    while still cleanly failing when data unexpectedly changes."
-readxl,1.3.1,"cellranger, Rcpp (>= 0.12.18), tibble (>= 1.3.1), utils","covr, knitr, rmarkdown, rprojroot (>= 1.1), testthat",https://cran.rstudio.com/src/contrib,"Import excel files into R. Supports '.xls' via the
+readbitmap,0.1.5,"bmp, jpeg, png, tiff","pixmap, testthat",https://cran.rstudio.com/src/contrib,"Identifies and reads Windows BMP, JPEG, PNG, and TIFF format bitmap
+    images. Identification defaults to the use of the magic number embedded in
+    the file rather than the file extension. Reading of JPEG and PNG image
+    depends on libjpg and libpng libraries. See file INSTALL for details if
+    necessary."
+readr,2.1.2,"cli (>= 3.0.0), clipr, crayon, hms (>= 0.4.1), lifecycle (>=
+0.2.0), methods, R6, rlang, tibble, utils, vroom (>= 1.5.6)","covr, curl, datasets, knitr, rmarkdown, spelling, stringi,
+testthat (>= 3.1.2), tzdb (>= 0.1.1), waldo, withr, xml2",https://cran.rstudio.com/src/contrib,"The goal of 'readr' is to provide a fast and friendly way to
+    read rectangular data (like 'csv', 'tsv', and 'fwf').  It is designed
+    to flexibly parse many types of data found in the wild, while still
+    cleanly failing when data unexpectedly changes."
+readxl,1.4.0,"cellranger, tibble (>= 2.0.1), utils","knitr, rmarkdown, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Import excel files into R. Supports '.xls' via the
     embedded 'libxls' C library <https://github.com/libxls/libxls> and
     '.xlsx' via the embedded 'RapidXML' C++ library
     <http://rapidxml.sourceforge.net>.  Works on Windows, Mac and Linux
@@ -1439,11 +1604,12 @@ reshape2,1.4.4,"plyr (>= 1.8.1), Rcpp, stringr","covr, lattice, testthat (>= 0.8
 rex,1.2.1,lazyeval,"covr, dplyr, ggplot2, Hmisc, knitr, magrittr, rmarkdown,
 roxygen2, rvest, stringr, testthat",https://cran.rstudio.com/src/contrib,"A friendly interface for the construction of regular
     expressions."
-rgdal,1.5-28,"grDevices, graphics, stats, utils","knitr, DBI, RSQLite, maptools, mapview, rmarkdown, curl,
+rgdal,1.5-32,"grDevices, graphics, stats, utils","knitr, DBI, RSQLite, maptools, mapview, rmarkdown, curl,
 rgeos",https://cran.rstudio.com/src/contrib,"Provides bindings to the 'Geospatial' Data Abstraction Library ('GDAL') (>= 1.11.4) and access to projection/transformation operations from the 'PROJ' library. Please note that 'rgdal' will be retired by the end of 2023, plan transition to sf/stars/'terra' functions using 'GDAL' and 'PROJ' at your earliest convenience. Use is made of classes defined in the 'sp' package. Raster and vector map data can be imported into R, and raster and vector 'sp' objects exported. The 'GDAL' and 'PROJ' libraries are external to the package, and, when installing the package from source, must be correctly installed first; it is important that 'GDAL' < 3 be matched with 'PROJ' < 6. From 'rgdal' 1.5-8, installed with to 'GDAL' >=3, 'PROJ' >=6 and 'sp' >= 1.4, coordinate reference systems use 'WKT2_2019' strings, not 'PROJ' strings. 'Windows' and 'macOS' binaries (including 'GDAL', 'PROJ' and their dependencies) are provided on 'CRAN'. "
 rgeos,0.5-9,"utils, stats, graphics","maptools (>= 0.8-5), testthat, XML, maps, rgdal",https://cran.rstudio.com/src/contrib,"Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. Please note that 'rgeos' will be retired by the end of 2023, plan transition to sf functions using 'GEOS' at your earliest convenience. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'. ('rgeos' >= 0.5-1): Up to and including 'GEOS' 3.7.1, topological operations succeeded with some invalid geometries for which the same operations fail from and including 'GEOS' 3.7.2. The 'checkValidity=' argument defaults and structure have been changed, from default FALSE to integer default '0L' for 'GEOS' < 3.7.2 (no check), '1L' 'GEOS' >= 3.7.2 (check and warn). A value of '2L' is also provided that may be used, assigned globally using 'set_RGEOS_CheckValidity(2L)', or locally using the 'checkValidity=2L' argument, to attempt zero-width buffer repair if invalid geometries are found. The previous default (FALSE, now '0L') is fastest and used for 'GEOS' < 3.7.2, but will not warn users of possible problems before the failure of topological operations that previously succeeded. From 'GEOS' 3.8.0, repair of geometries may also be attempted using 'gMakeValid()', which may, however, return a collection of geometries of different types."
-rlang,0.4.12,utils,"cli, covr, crayon, glue, magrittr, methods, pak, pillar,
-rmarkdown, testthat (>= 3.0.0), vctrs (>= 0.2.3), withr",https://cran.rstudio.com/src/contrib,"A toolbox for working with base types, core R features
+rlang,1.0.4,utils,"cli (>= 3.1.0), covr, crayon, fs, glue, knitr, magrittr,
+methods, pillar, rmarkdown, stats, testthat (>= 3.0.0), tibble,
+usethis, vctrs (>= 0.2.3), withr",https://cran.rstudio.com/src/contrib,"A toolbox for working with base types, core R features
   like the condition system, and core 'Tidyverse' features like tidy
   evaluation."
 rlist,0.4.6.2,"yaml, jsonlite, XML, data.table","testthat, stringdist",https://cran.rstudio.com/src/contrib,"Provides a set of functions for data manipulation with
@@ -1463,11 +1629,12 @@ rmapshaper,0.4.5,"geojsonio (>= 0.9.4), geojsonlint (>= 0.4.0), jsonlite (>=
     'geojsonio' package for working with 'geojson' objects, the 'sf'
     package for working with 'sf' objects, and the 'sp' and 'rgdal'
     packages for working with 'Spatial' objects."
-rmarkdown,2.11,"tools, utils, knitr (>= 1.22), yaml (>= 2.1.19), htmltools (>=
-0.3.5), evaluate (>= 0.13), jsonlite, tinytex (>= 0.31), xfun
-(>= 0.21), jquerylib, methods, stringr (>= 1.2.0)","shiny (>= 1.6.0), tufte, testthat (>= 3.0.0), digest,
-dygraphs, vctrs, tibble, fs, rsconnect, withr (>= 2.4.2), bslib
-(>= 0.2.5.1), sass (>= 0.4.0)",https://cran.rstudio.com/src/contrib,Convert R Markdown documents into a variety of formats.
+rmarkdown,2.14,"bslib (>= 0.2.5.1), evaluate (>= 0.13), htmltools (>= 0.3.5),
+jquerylib, jsonlite, knitr (>= 1.22), methods, stringr (>=
+1.2.0), tinytex (>= 0.31), tools, utils, xfun (>= 0.30), yaml
+(>= 2.1.19)","digest, dygraphs, fs, rsconnect, downlit (>= 0.4.0), katex
+(>= 1.4.0), sass (>= 0.4.0), shiny (>= 1.6.0), testthat (>=
+3.0.3), tibble, tufte, vctrs, withr (>= 2.4.2)",https://cran.rstudio.com/src/contrib,Convert R Markdown documents into a variety of formats.
 RMySQL,0.10.23,methods,"testthat, curl",https://cran.rstudio.com/src/contrib,"Legacy 'DBI' interface to 'MySQL' / 'MariaDB' based on old code
     ported from S-PLUS. A modern 'MySQL' client based on 'Rcpp' is available 
     from the 'RMariaDB' package."
@@ -1475,28 +1642,28 @@ rnaturalearth,0.1.0,"sp (>= 1.0.15), utils (>= 3.2.3), sf (>= 0.3-4)","rgdal, kn
 1.1.0), devtools (>= 1.10.0), rnaturalearthdata (>= 0.1.0),
 rnaturalearthhires (>= 0.1.0), raster (>= 2.5-2), rgeos",https://cran.rstudio.com/src/contrib,Facilitates mapping by making natural earth map data from <http://www.naturalearthdata.com/> more easily available to R users.
 rnaturalearthdata,0.1.0,sp (>= 1.0.15),"knitr (>= 1.12.3), testthat (>= 0.9.1)",https://cran.rstudio.com/src/contrib,Vector map data from <http://www.naturalearthdata.com/>. Access functions are provided in the accompanying package 'rnaturalearth'.
-rnaturalearthhires,0.2.0,sp (>= 1.0.15),"knitr (>= 1.12.3), testthat (>= 0.9.1)","https://docs.ropensci.org/rnaturalearthhires,
-https://github.com/ropensci/rnaturalearthhires","Facilitates mapping by making natural earth map data from http://
+rnaturalearthhires,0.2.0,sp (>= 1.0.15),"knitr (>= 1.12.3),
+testthat (>= 0.9.1)","https://docs.ropensci.org/rnaturalearthhires, https://github.com/ropensci/rnaturalearthhires","Facilitates mapping by making natural earth map data from http://
     www.naturalearthdata.com/ more easily available to R users. Focuses on vector
     data."
-roxygen2,7.1.2,"brew, commonmark, desc (>= 1.2.0), digest, knitr, methods,
-pkgload (>= 1.0.2), purrr (>= 0.3.3), R6 (>= 2.1.2), rlang,
-stringi, stringr (>= 1.0.0), utils, xml2","covr, devtools, rmarkdown, testthat (>= 2.1.0), R.methodsS3,
-R.oo",https://cran.rstudio.com/src/contrib,"Generate your Rd documentation, 'NAMESPACE' file,
+roxygen2,7.2.1,"brew, cli (>= 3.3.0), commonmark, desc (>= 1.2.0), digest,
+knitr, methods, pkgload (>= 1.0.2), purrr (>= 0.3.3), R6 (>=
+2.1.2), rlang (>= 1.0.0), stringi, stringr (>= 1.0.0), utils,
+withr, xml2","covr, R.methodsS3, R.oo, rmarkdown, testthat (>= 3.1.2), yaml",https://cran.rstudio.com/src/contrib,"Generate your Rd documentation, 'NAMESPACE' file,
     and collation field using specially formatted comments. Writing
     documentation in-line with code makes it easier to keep your
     documentation up-to-date as your requirements change. 'Roxygen2' is
     inspired by the 'Doxygen' system for C++."
 roxygen2md,1.0.0,"desc, devtools, enc, rex, rlang, tibble, usethis, withr","rstudioapi, testthat",https://cran.rstudio.com/src/contrib,"Converts elements of 'roxygen' documentation to
     'markdown'."
-rpart,4.1-15,,survival,https://cran.rstudio.com/src/contrib,"Recursive partitioning for classification, 
+rpart,4.1.16,,survival,https://cran.rstudio.com/src/contrib,"Recursive partitioning for classification, 
   regression and survival trees.  An implementation of most of the 
   functionality of the 1984 book by Breiman, Friedman, Olshen and Stone."
 RPostgres,1.4.3,"bit64, blob (>= 1.2.0), DBI (>= 1.1.0), hms (>= 1.0.0),
 lubridate, methods, Rcpp (>= 1.0.7), withr","callr, covr, DBItest (>= 1.7.1), knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"Fully DBI-compliant Rcpp-backed interface to
     PostgreSQL <https://www.postgresql.org/>, an open-source relational
     database."
-rprojroot,2.0.2,,"covr, knitr, lifecycle, mockr, rmarkdown, testthat (>=
+rprojroot,2.0.3,,"covr, knitr, lifecycle, mockr, rmarkdown, testthat (>=
 3.0.0), withr",https://cran.rstudio.com/src/contrib,"Robust, reliable and flexible paths to files below
     a project root. The 'root' of a project is defined as a directory that
     matches a certain criterion, e.g., it contains a certain regular file."
@@ -1519,7 +1686,7 @@ testthat, spelling",https://cran.rstudio.com/src/contrib,"Provides a simple and 
     The package contains helper functions for identifying univariate and multivariate outliers, assessing normality and homogeneity of variances."
 rstudioapi,0.13,,"testthat, knitr, rmarkdown, clipr",https://cran.rstudio.com/src/contrib,"Access the RStudio API (if available) and provide informative error
     messages when it's not."
-Rttf2pt1,1.3.9,,,https://cran.rstudio.com/src/contrib,"Contains the program 'ttf2pt1', for use with the
+Rttf2pt1,1.3.10,,,https://cran.rstudio.com/src/contrib,"Contains the program 'ttf2pt1', for use with the
     'extrafont' package. This product includes software developed by the 'TTF2PT1'
     Project and its contributors."
 rversions,2.1.1,"curl, utils, xml2 (>= 1.0.0)","mockery, testthat",https://cran.rstudio.com/src/contrib,"Query the main 'R' 'SVN' repository to find the
@@ -1529,7 +1696,7 @@ rvest,1.0.2,"httr (>= 0.5), lifecycle (>= 1.0.0), magrittr, rlang (>=
 0.4.10), selectr, tibble, xml2 (>= 1.3)","covr, glue, knitr, readr, rmarkdown, repurrrsive, spelling,
 stringi (>= 0.3.1), testthat (>= 3.0.2), webfakes",https://cran.rstudio.com/src/contrib,"Wrappers around the 'xml2' and 'httr' packages to
     make it easy to download, then manipulate, HTML and XML."
-s2,1.0.7,"Rcpp, wk (>= 0.5.0)","testthat, vctrs",https://cran.rstudio.com/src/contrib,"Provides R bindings for Google's s2 library for geometric calculations on
+s2,1.1.0,"Rcpp, wk (>= 0.6.0)","testthat (>= 3.0.0), vctrs",https://cran.rstudio.com/src/contrib,"Provides R bindings for Google's s2 library for geometric calculations on
     the sphere. High-performance constructors and exporters provide high compatibility
     with existing spatial packages, transformers construct new geometries from existing
     geometries, predicates provide a means to select geometries based on spatial 
@@ -1545,13 +1712,13 @@ survival",https://cran.rstudio.com/src/contrib,"Object-oriented software for mod
 	     applicable to (generalized) linear model objects fitted by lm() and glm() but can also be adapted
 	     to other classes through S3 methods. Details can be found in Zeileis et al. (2020) <doi:10.18637/jss.v095.i01>,
 	     Zeileis (2004) <doi:10.18637/jss.v011.i10> and Zeileis (2006) <doi:10.18637/jss.v016.i09>."
-sass,0.4.0,"fs, rlang (>= 0.4.10), htmltools (>= 0.5.1), R6, rappdirs","testthat, knitr, rmarkdown, withr, shiny, curl",https://cran.rstudio.com/src/contrib,"An 'SCSS' compiler, powered by the 'LibSass' library. With this,
+sass,0.4.2,"fs, rlang (>= 0.4.10), htmltools (>= 0.5.1), R6, rappdirs","testthat, knitr, rmarkdown, withr, shiny, curl",https://cran.rstudio.com/src/contrib,"An 'SCSS' compiler, powered by the 'LibSass' library. With this,
     R developers can use variables, inheritance, and functions to generate
     dynamic style sheets. The package uses the 'Sass CSS' extension language,
     which is stable, powerful, and CSS compatible."
-scales,1.1.1,"farver (>= 2.0.3), labeling, lifecycle, munsell (>= 0.5), R6,
-RColorBrewer, viridisLite","bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), testthat (>=
-2.1.0)",https://cran.rstudio.com/src/contrib,"Graphical scales map data to aesthetics, and
+scales,1.2.0,"farver (>= 2.0.3), labeling, lifecycle, munsell (>= 0.5), R6,
+RColorBrewer, rlang (>= 1.0.0), viridisLite","bit64, covr, dichromat, ggplot2, hms (>= 0.5.0), stringi,
+testthat (>= 3.0.0), waldo (>= 0.4.0)",https://cran.rstudio.com/src/contrib,"Graphical scales map data to aesthetics, and
     provide methods for automatically determining breaks and labels for
     axes and legends."
 selectr,0.4-2,"methods, stringr, R6","testthat, XML, xml2",https://cran.rstudio.com/src/contrib,"Translates a CSS3 selector into an equivalent XPath
@@ -1560,21 +1727,39 @@ selectr,0.4-2,"methods, stringr, R6","testthat, XML, xml2",https://cran.rstudio.
   provided are convenience functions useful for using CSS selectors on
   XML nodes. This package is a port of the Python package 'cssselect'
   (<https://cssselect.readthedocs.io/>)."
-selfdestructin5,0.0.0.9000,"crayon, dplyr, glue, googledrive, googlesheets4, magrittr,
-purrr, stringr, tools, tidyr, usethis, utils, glitr, glamr,
-gophr, gt, tidyselect, fontawesome","forcats, knitr, rmarkdown, qpdf",https://github.com/USAID-OHA-SI/selfdestructin5,Creates a series of data frames that can be passed to a gt() to create the OHA SI Mission Director Briefers.
+selfdestructin5,0.2.0,"crayon,
+dplyr,
+glue,
+googledrive,
+googlesheets4,
+magrittr,
+purrr,
+stringr,
+tools,
+tidyr,
+usethis,
+utils,
+glitr,
+glamr,
+gophr,
+gt,
+tidyselect,
+fontawesome","forcats,
+knitr,
+rmarkdown,
+qpdf",https://github.com/USAID-OHA-SI/selfdestructin5,Creates a series of data frames that can be passed to a gt() to create the OHA SI Mission Director Briefers.
 sessioninfo,1.2.2,"cli (>= 3.1.0), tools, utils","callr, covr, mockery, reticulate, rmarkdown, testthat, withr",https://cran.rstudio.com/src/contrib,"Query and print information about the current R
     session.  It is similar to 'utils::sessionInfo()', but includes more
     information about packages, and where they were installed from."
-sf,1.0-5,"classInt (>= 0.4-1), DBI (>= 0.8), graphics, grDevices, grid,
+sf,1.0-8,"classInt (>= 0.4-1), DBI (>= 0.8), graphics, grDevices, grid,
 magrittr, Rcpp (>= 0.12.18), s2 (>= 1.0.7), stats, tools, units
-(>= 0.6-0), utils","blob, covr, dplyr (>= 0.8-3), ggplot2, knitr, lwgeom (>=
-0.2-1), maps, mapview, Matrix, microbenchmark, odbc, pillar,
-pool, raster, rgdal, rgeos, rlang, rmarkdown, RPostgres (>=
-1.1.0), RPostgreSQL, RSQLite, sp (>= 1.2-4), spatstat (>=
-2.0-1), spatstat.geom, spatstat.core, spatstat.linnet,
+(>= 0.7-0), utils","blob, covr, dplyr (>= 0.8-3), ggplot2, knitr, lwgeom (>=
+0.2-1), maps, mapview, Matrix, microbenchmark, odbc, pbapply,
+pillar, pool, raster, rlang, rmarkdown, RPostgres (>= 1.1.0),
+RPostgreSQL, RSQLite, sp (>= 1.2-4), spatstat (>= 2.0-1),
+spatstat.geom, spatstat.random, spatstat.linnet,
 spatstat.utils, stars (>= 0.2-0), terra, testthat, tibble (>=
-1.4.1), tidyr (>= 1.0-0), tidyselect (>= 1.0.0), tmap (>= 2.0),
+1.4.1), tidyr (>= 1.2.0), tidyselect (>= 1.0.0), tmap (>= 2.0),
 vctrs, wk",https://cran.rstudio.com/src/contrib,"Support for simple features, a standardized way to
     encode spatial vector data. Binds to 'GDAL' for reading and writing
     data, to 'GEOS' for geometrical operations, and to 'PROJ' for
@@ -1584,15 +1769,14 @@ sfheaders,0.4.0,"geometries (>= 0.2.0), Rcpp","covr, knitr, testthat",https://cr
   on the Simple Feature library. Conversion functions are available at both the R level, 
   and through 'Rcpp'."
 shades,1.4.0,,"testthat, covr, ggplot2",https://cran.rstudio.com/src/contrib,"Functions for easily manipulating colours, creating colour scales and calculating colour distances."
-shiny,1.7.1,"utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
+shiny,1.7.2,"utils, grDevices, httpuv (>= 1.5.2), mime (>= 0.3), jsonlite
 (>= 0.9.16), xtable, fontawesome (>= 0.2.1), htmltools (>=
 0.5.2), R6 (>= 2.0), sourcetools, later (>= 1.0.0), promises
 (>= 1.1.0), tools, crayon, rlang (>= 0.4.10), fastmap (>=
 1.1.0), withr, commonmark (>= 1.7), glue (>= 1.3.2), bslib (>=
 0.3.0), cachem, ellipsis, lifecycle (>= 0.2.0)","datasets, Cairo (>= 1.5-5), testthat (>= 3.0.0), knitr (>=
 1.6), markdown, rmarkdown, ggplot2, reactlog (>= 1.0.0),
-magrittr, shinytest (>= 1.4.0.9003), yaml, future, dygraphs,
-ragg, showtext, sass",https://cran.rstudio.com/src/contrib,"Makes it incredibly easy to build interactive web
+magrittr, yaml, future, dygraphs, ragg, showtext, sass",https://cran.rstudio.com/src/contrib,"Makes it incredibly easy to build interactive web
     applications with R. Automatic ""reactive"" binding between inputs and
     outputs and extensive prebuilt widgets make it possible to build
     beautiful, responsive, and powerful applications with minimal effort."
@@ -1603,18 +1787,18 @@ shinydisconnect, testthat (>= 0.9.1)",https://cran.rstudio.com/src/contrib,"Perf
     its original value, delaying code execution by a few seconds, and many more
     useful functions for both the end user and the developer. 'shinyjs' can also
     be used to easily call your own custom JavaScript functions from R."
-showtext,0.9-4,grDevices,"knitr, rmarkdown, prettydoc, curl, jsonlite",https://cran.rstudio.com/src/contrib,"Making it easy to use various types of fonts ('TrueType',
+showtext,0.9-5,grDevices,"knitr, rmarkdown, prettydoc, curl, jsonlite",https://cran.rstudio.com/src/contrib,"Making it easy to use various types of fonts ('TrueType',
     'OpenType', Type 1, web fonts, etc.) in R graphs, and supporting most output
     formats of R graphics including PNG, PDF and SVG. Text glyphs will be converted
     into polygons or raster images, hence after the plot has been created, it no
     longer relies on the font files. No external software such as 'Ghostscript' is
     needed to use this package."
 showtextdb,3.0,"sysfonts (>= 0.7), utils",curl,https://cran.rstudio.com/src/contrib,Providing font files that can be used by the 'showtext' package.
-skimr,2.1.3,"cli, crayon, dplyr (>= 0.8.0), knitr (>= 1.2), magrittr (>=
-1.5), purrr, repr, rlang (>= 0.3.1), stats, stringr (>= 1.1),
-tibble (>= 2.0.0), tidyr (>= 1.0), tidyselect (>= 1.0.0),
-vctrs, withr","covr, data.table, dtplyr, extrafont, lubridate, rmarkdown,
-sf, testthat (>= 2.0.0)",https://cran.rstudio.com/src/contrib,"A simple to use summary function that can be used with pipes
+skimr,2.1.4,"cli, dplyr (>= 0.8.0), knitr (>= 1.2), magrittr (>= 1.5),
+pillar (>= 1.6.4), purrr, repr, rlang (>= 0.3.1), stats,
+stringr (>= 1.1), tibble (>= 2.0.0), tidyr (>= 1.0), tidyselect
+(>= 1.0.0), vctrs","covr, crayon, data.table, dtplyr, extrafont, haven,
+lubridate, rmarkdown, testthat (>= 2.0.0), withr",https://cran.rstudio.com/src/contrib,"A simple to use summary function that can be used with pipes
     and displays nicely in the console. The default summary statistics may
     be modified by the user as can the default formatting.  Support for
     data frames and vectors is included, and users can implement their own
@@ -1629,7 +1813,7 @@ SnowballC,0.7.0,,,https://cran.rstudio.com/src/contrib,"An R interface to the C 
   Danish, Dutch, English, Finnish, French, German, Hungarian, Italian,
   Norwegian, Portuguese, Romanian, Russian, Spanish, Swedish
   and Turkish."
-sodium,1.2.0,,"knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Bindings to 'libsodium': a modern, easy-to-use software library for
+sodium,1.2.1,,"knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Bindings to 'libsodium': a modern, easy-to-use software library for
     encryption, decryption, signatures, password hashing and more. Sodium uses
     curve25519, a state-of-the-art Diffie-Hellman function by Daniel Bernstein,
     which has become very popular after it was discovered that the NSA had
@@ -1638,8 +1822,8 @@ sourcetools,0.1.7,,testthat,https://cran.rstudio.com/src/contrib,"Tools for the 
     'sourcetools' package provides both an R and C++ interface for the tokenization
     of R code, and helpers for interacting with the tokenized representation of R
     code."
-sp,1.4-6,"utils, stats, graphics, grDevices, lattice, grid","RColorBrewer, rgdal (>= 1.2-3), rgeos (>= 0.3-13), gstat,
-maptools, deldir, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Classes and methods for spatial
+sp,1.5-0,"utils, stats, graphics, grDevices, lattice, grid","RColorBrewer, rgdal (>= 1.2-3), rgeos (>= 0.3-13), gstat,
+maptools, deldir, knitr, rmarkdown, sf",https://cran.rstudio.com/src/contrib,"Classes and methods for spatial
   data; the classes document where the spatial location information
   resides, for 2D or 3D data. Utility functions are provided, e.g. for
   plotting data as maps, spatial selection, as well as methods for
@@ -1654,7 +1838,7 @@ SQUAREM,2021.1,,setRNG,https://cran.rstudio.com/src/contrib,"Algorithms for acce
         convergent acceleration scheme.  A tutorial style introduction
         to this package is available in a vignette on the CRAN download
         page or, when the package is loaded in an R session, with
-        vignette(""SQUAREM""). Refer to the J Stat Software article: <doi:10.18637/jss.v092.i07>. "
+        vignette(""SQUAREM""). Refer to the J Stat Software article: <doi:10.18637/jss.v092.i07>."
 stringdist,0.9.8,parallel,tinytest,https://cran.rstudio.com/src/contrib,"Implements an approximate string matching version of R's native
     'match' function. Also offers fuzzy text search based on various string
      distance measures. Can calculate various string distances based on edits
@@ -1665,7 +1849,7 @@ stringdist,0.9.8,parallel,tinytest,https://cran.rstudio.com/src/contrib,"Impleme
     vectors representing generic sequences. This package is built for speed and
     runs in parallel by using 'openMP'. An API for C or C++ is exposed as well.
     Reference: MPJ van der Loo (2014) <doi:10.32614/RJ-2014-011>."
-stringi,1.7.6,"tools, utils, stats",,https://cran.rstudio.com/src/contrib,"A collection of character string/text/natural language
+stringi,1.7.8,"tools, utils, stats",,https://cran.rstudio.com/src/contrib,"A collection of character string/text/natural language
     processing tools for pattern searching (e.g., with 'Java'-like regular
     expressions or the 'Unicode' collation algorithm), random string generation,
     case mapping, string transliteration, concatenation, sorting, padding,
@@ -1678,17 +1862,16 @@ stringr,1.4.0,"glue (>= 1.2.0), magrittr, stringi (>= 1.1.7)","covr, htmltools, 
     argument names (and positions) are consistent, all functions deal with
     ""NA""'s and zero length vectors in the same way, and the output from
     one function is easy to feed into the input of another."
-styler,1.6.2,"backports (>= 1.1.0), cli (>= 1.1.0), glue, magrittr (>=
-2.0.0), purrr (>= 0.2.3), R.cache (>= 0.15.0), rematch2 (>=
-2.0.1), rlang (>= 0.1.1), rprojroot (>= 1.1), tibble (>=
-1.4.2), tools, withr (>= 1.0.0), xfun (>= 0.1)","data.tree (>= 0.1.6), digest, dplyr, here, knitr, prettycode,
+styler,1.7.0,"cli (>= 3.1.1), magrittr (>= 2.0.0), purrr (>= 0.2.3), R.cache
+(>= 0.15.0), rematch2 (>= 2.0.1), rlang (>= 0.1.1), rprojroot
+(>= 1.1), tibble (>= 1.4.2), tools, withr (>= 1.0.0),","data.tree (>= 0.1.6), digest, dplyr, here, knitr, prettycode,
 rmarkdown, roxygen2, rstudioapi (>= 0.7), testthat (>= 2.1.0)",https://cran.rstudio.com/src/contrib,"Pretty-prints R code without changing the user's formatting
     intent."
-survival,3.2-13,"graphics, Matrix, methods, splines, stats, utils",,https://cran.rstudio.com/src/contrib,"Contains the core survival analysis routines, including
+survival,3.3-1,"graphics, Matrix, methods, splines, stats, utils",,https://cran.rstudio.com/src/contrib,"Contains the core survival analysis routines, including
 	     definition of Surv objects, 
 	     Kaplan-Meier and Aalen-Johansen (multi-state) curves, Cox models,
 	     and parametric accelerated failure time models."
-svglite,2.0.0,systemfonts (>= 1.0.0),"htmltools, testthat, xml2 (>= 1.0.0), covr, fontquiver (>=
+svglite,2.1.0,systemfonts (>= 1.0.0),"htmltools, testthat, xml2 (>= 1.0.0), covr, fontquiver (>=
 0.2.0), knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"A graphics device for R that produces 'Scalable Vector Graphics'.
   'svglite' is a fork of the older 'RSvgDevice' package."
 sys,3.4,,"unix (>= 1.4), spelling, testthat",https://cran.rstudio.com/src/contrib,"Drop-in replacements for the base system2() function with fine control
@@ -1696,10 +1879,10 @@ sys,3.4,,"unix (>= 1.4), spelling, testthat",https://cran.rstudio.com/src/contri
     background tasks, and streaming STDIN / STDOUT / STDERR over binary or text 
     connections. Arguments on Windows automatically get encoded and quoted to work 
     on different locales."
-sysfonts,0.8.5,,"curl, jsonlite",https://cran.rstudio.com/src/contrib,"Loading system fonts and Google Fonts
+sysfonts,0.8.8,,"curl, jsonlite",https://cran.rstudio.com/src/contrib,"Loading system fonts and Google Fonts
     <https://fonts.google.com/> into R, in order to
     support other packages such as 'R2SWF' and 'showtext'."
-systemfonts,1.0.3,,"testthat (>= 2.1.0), covr, knitr, rmarkdown, tools",https://cran.rstudio.com/src/contrib,"Provides system native access to the font catalogue. As font
+systemfonts,1.0.4,,"testthat (>= 2.1.0), covr, knitr, rmarkdown, tools",https://cran.rstudio.com/src/contrib,"Provides system native access to the font catalogue. As font
     handling varies between systems it is difficult to correctly locate 
     installed fonts across different operating systems. The 'systemfonts' 
     package provides bindings to the native libraries on Windows, macOS and 
@@ -1714,12 +1897,13 @@ stringr, tibble, tidyr",,https://cran.rstudio.com/src/contrib,"Efficient tabulat
 	Accepts data.table, tibble, or data.frame as input. 
 	Efficient with big data: if you give it a data.table, 
 	tab() uses data.table syntax."
-terra,1.5-12,"methods, Rcpp","parallel, tinytest, ncdf4, sf (>= 0.9-8), deldir, XML, igraph",https://cran.rstudio.com/src/contrib,"Methods for spatial data analysis with raster and vector data. Raster methods allow for low-level data manipulation as well as high-level global, local, zonal, and focal computation. The predict and interpolate methods facilitate the use of regression type (interpolation, machine learning) models for spatial prediction, including with satellite remote sensing data. Processing of very large files is supported. See the manual and tutorials on <https://rspatial.org/terra/> to get started. 'terra' is very similar to the 'raster' package; but 'terra' can do more, is easier to use, and it is faster."
-testthat,3.1.2,"brio, callr (>= 3.5.1), cli (>= 2.2.0), crayon (>= 1.3.4),
+terra,1.6-3,"methods, Rcpp","parallel, tinytest, ncdf4, sf (>= 0.9-8), deldir, XML,
+leaflet",https://cran.rstudio.com/src/contrib,"Methods for spatial data analysis with raster and vector data. Raster methods allow for low-level data manipulation as well as high-level global, local, zonal, and focal computation. The predict and interpolate methods facilitate the use of regression type (interpolation, machine learning) models for spatial prediction, including with satellite remote sensing data. Processing of very large files is supported. See the manual and tutorials on <https://rspatial.org/terra/> to get started. 'terra' is very similar to the 'raster' package; but 'terra' can do more, is easier to use, and it is faster."
+testthat,3.1.4,"brio, callr (>= 3.5.1), cli (>= 3.3.0), crayon (>= 1.3.4),
 desc, digest, ellipsis (>= 0.2.0), evaluate, jsonlite,
 lifecycle, magrittr, methods, pkgload, praise, processx, ps (>=
-1.3.4), R6 (>= 2.2.0), rlang (>= 0.4.9), utils, waldo (>=
-0.2.4), withr (>= 2.4.3)","covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr, mockery,
+1.3.4), R6 (>= 2.2.0), rlang (>= 1.0.1), utils, waldo (>=
+0.4.0), withr (>= 2.4.3)","covr, curl (>= 0.9.5), diffviewer (>= 0.1.0), knitr, mockery,
 rmarkdown, rstudioapi, shiny, usethis, vctrs (>= 0.1.0), xml2",https://cran.rstudio.com/src/contrib,"Software testing is important, but, in part because it is
     frustrating and boring, many of us avoid it. 'testthat' is a testing
     framework for R that is easy to learn and use, and integrates with
@@ -1728,9 +1912,9 @@ textshaping,0.3.6,systemfonts (>= 1.0.0),"covr, knitr, rmarkdown",https://cran.r
     library and the bidirectional algorithm in the 'Fribidi' library. 
     'textshaping' is a low-level utility package mainly for graphic devices that 
     expands upon the font tool-set provided by the 'systemfonts' package."
-tibble,3.1.6,"ellipsis (>= 0.3.2), fansi (>= 0.4.0), lifecycle (>= 1.0.0),
-magrittr, methods, pillar (>= 1.6.2), pkgconfig, rlang (>=
-0.4.3), utils, vctrs (>= 0.3.8)","bench, bit64, blob, brio, callr, cli, covr, crayon (>=
+tibble,3.1.8,"fansi (>= 0.4.0), lifecycle (>= 1.0.0), magrittr, methods,
+pillar (>= 1.7.0), pkgconfig, rlang (>= 1.0.2), utils, vctrs
+(>= 0.3.8)","bench, bit64, blob, brio, callr, cli, covr, crayon (>=
 1.3.4), DiagrammeR, dplyr, evaluate, formattable, ggplot2, hms,
 htmltools, knitr, lubridate, mockr, nycflights13, pkgbuild,
 pkgload, purrr, rmarkdown, stringi, testthat (>= 3.0.2), tidyr,
@@ -1748,29 +1932,28 @@ testthat (>= 2.1.0), tidytext",https://cran.rstudio.com/src/contrib,"How can we 
     ratio by a prior. By default, the prior is estimated from the data itself, 
     an empirical Bayes approach, but an uninformative prior is also available."
 tidylog,1.0.2,"dplyr, tidyr, glue, clisymbols","testthat, covr, forcats, knitr, rmarkdown, bench",https://cran.rstudio.com/src/contrib,Provides feedback about 'dplyr' and 'tidyr' operations.
-tidyr,1.1.4,"dplyr (>= 0.8.2), ellipsis (>= 0.1.0), glue, lifecycle,
+tidyr,1.2.0,"dplyr (>= 1.0.0), ellipsis (>= 0.1.0), glue, lifecycle,
 magrittr, purrr, rlang, tibble (>= 2.1.1), tidyselect (>=
-1.1.0), utils, vctrs (>= 0.3.6)","covr, data.table, jsonlite, knitr, readr, repurrrsive (>=
-1.0.0), rmarkdown, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Tools to help to create tidy data, where each
-    column is a variable, each row is an observation, and each cell
-    contains a single value.  'tidyr' contains tools for changing the
-    shape (pivoting) and hierarchy (nesting and 'unnesting') of a dataset,
-    turning deeply nested lists into rectangular data frames
-    ('rectangling'), and extracting values out of string columns. It also
-    includes tools for working with missing values (both implicit and
-    explicit)."
-tidyselect,1.1.1,"ellipsis, glue (>= 1.3.0), purrr (>= 0.3.2), rlang (>= 0.4.6),
+1.1.0), utils, vctrs (>= 0.3.7)","covr, data.table, jsonlite, knitr, readr, repurrrsive (>=
+1.0.0), rmarkdown, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Tools to help to create tidy data, where each column is a
+    variable, each row is an observation, and each cell contains a single
+    value.  'tidyr' contains tools for changing the shape (pivoting) and
+    hierarchy (nesting and 'unnesting') of a dataset, turning deeply
+    nested lists into rectangular data frames ('rectangling'), and
+    extracting values out of string columns. It also includes tools for
+    working with missing values (both implicit and explicit)."
+tidyselect,1.1.2,"ellipsis, glue (>= 1.3.0), purrr (>= 0.3.2), rlang (>= 1.0.1),
 vctrs (>= 0.3.0)","covr, crayon, dplyr, knitr, magrittr, rmarkdown, testthat (>=
-2.3.0), tibble (>= 2.1.3), withr",https://cran.rstudio.com/src/contrib,"A backend for the selecting functions of the 'tidyverse'.
+3.1.1), tibble (>= 2.1.3), withr",https://cran.rstudio.com/src/contrib,"A backend for the selecting functions of the 'tidyverse'.
     It makes it easy to implement select-like functions in your own
     packages in a way that is consistent with other 'tidyverse'
     interfaces for selection."
-tidytext,0.3.2,"dplyr, generics, hunspell, janeaustenr, lifecycle, Matrix,
+tidytext,0.3.3,"dplyr, generics, hunspell, janeaustenr, lifecycle, Matrix,
 methods, purrr (>= 0.1.1), rlang (>= 0.4.10), stringr, tibble,
 tokenizers, vctrs","broom, covr, data.table, ggplot2, knitr, mallet, NLP,
 quanteda, readr, reshape2, rmarkdown, scales, stm, stopwords,
 testthat (>= 2.1.0), textdata, tidyr, tm, topicmodels, vdiffr,
-wordcloud, XML",https://cran.rstudio.com/src/contrib,"Using tidy data principles can make many text mining tasks
+wordcloud",https://cran.rstudio.com/src/contrib,"Using tidy data principles can make many text mining tasks
     easier, more effective, and consistent with tools already in wide use.
     Much of the infrastructure needed for text mining with tidy data
     frames already exists in packages like 'dplyr', 'broom', 'tidyr', and
@@ -1787,16 +1970,16 @@ usethis","testthat (>= 2.1.0), covr, pkgdown, tibble",https://cran.rstudio.com/s
   (<https://github.com/rfordatascience/tidytuesday>) for people to
   analyze and visualize. This package provides the tools to easily download this data and the 
   description of the source."
-tidyverse,1.3.1,"broom (>= 0.7.6), cli (>= 2.4.0), crayon (>= 1.4.1), dbplyr
-(>= 2.1.1), dplyr (>= 1.0.5), dtplyr (>= 1.1.0), forcats (>=
-0.5.1), googledrive (>= 1.0.1), googlesheets4 (>= 0.3.0),
-ggplot2 (>= 3.3.3), haven (>= 2.3.1), hms (>= 1.0.0), httr (>=
-1.4.2), jsonlite (>= 1.7.2), lubridate (>= 1.7.10), magrittr
-(>= 2.0.1), modelr (>= 0.1.8), pillar (>= 1.6.0), purrr (>=
-0.3.4), readr (>= 1.4.0), readxl (>= 1.3.1), reprex (>= 2.0.0),
-rlang (>= 0.4.10), rstudioapi (>= 0.13), rvest (>= 1.0.0),
-stringr (>= 1.4.0), tibble (>= 3.1.0), tidyr (>= 1.1.3), xml2
-(>= 1.3.2)","covr, feather, glue, knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"The 'tidyverse' is a set of packages that work in harmony
+tidyverse,1.3.2,"broom (>= 0.7.10), cli (>= 3.1.0), crayon (>= 1.4.2), dbplyr
+(>= 2.1.1), dplyr (>= 1.0.7), dtplyr (>= 1.2.0), forcats (>=
+0.5.1), ggplot2 (>= 3.3.5), googledrive (>= 2.0.0),
+googlesheets4 (>= 1.0.0), haven (>= 2.4.3), hms (>= 1.1.1),
+httr (>= 1.4.2), jsonlite (>= 1.7.2), lubridate (>= 1.8.0),
+magrittr (>= 2.0.1), modelr (>= 0.1.8), pillar (>= 1.6.4),
+purrr (>= 0.3.4), readr (>= 2.1.1), readxl (>= 1.3.1), reprex
+(>= 2.0.1), rlang (>= 0.4.12), rstudioapi (>= 0.13), rvest (>=
+1.0.2), stringr (>= 1.4.0), tibble (>= 3.1.6), tidyr (>=
+1.1.4), xml2 (>= 1.3.3)","covr, feather, glue, knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"The 'tidyverse' is a set of packages that work in harmony
     because they share common data representations and 'API' design. This
     package is designed to make it easy to install and load multiple
     'tidyverse' packages in a single step. Learn more about the
@@ -1807,6 +1990,7 @@ purrr, tibble, ggplot2, cellranger, openxlsx, rlang",https://cran.rstudio.com/sr
     Tokenizes Excel formulas.  Supports '.xlsx' and '.xlsm' via the embedded
     'RapidXML' C++ library <http://rapidxml.sourceforge.net>.  Does not support
     '.xlsb' or '.xls'."
+tiff,0.1-11,,,https://cran.rstudio.com/src/contrib,"Functions to read, write and display bitmap images stored in the TIFF format. It can read and write both files and in-memory raw vectors, including native image representation."
 timeDate,3043.102,,"date, RUnit",https://cran.rstudio.com/src/contrib,"The 'timeDate' class fulfils the conventions of the ISO 8601 
 	standard as well as of the ANSI C and POSIX standards. Beyond
 	these standards it provides the ""Financial Center"" concept
@@ -1817,7 +2001,7 @@ timeDate,3043.102,,"date, RUnit",https://cran.rstudio.com/src/contrib,"The 'time
 	data records from the same time zone, even if the financial 
 	centers changed day light saving times at different calendar
 	dates."
-tinytex,0.36,xfun (>= 0.29),"testit, rstudioapi",https://cran.rstudio.com/src/contrib,"Helper functions to install and maintain the 'LaTeX' distribution
+tinytex,0.40,xfun (>= 0.29),"testit, rstudioapi",https://cran.rstudio.com/src/contrib,"Helper functions to install and maintain the 'LaTeX' distribution
   named 'TinyTeX' (<https://yihui.org/tinytex/>), a lightweight, cross-platform,
   portable, and easy-to-maintain version of 'TeX Live'. This package also
   contains helper functions to compile 'LaTeX' documents, and install missing
@@ -1839,7 +2023,7 @@ tweenr,1.0.2,"Rcpp (>= 0.12.3), grDevices, farver, magrittr, rlang","testthat, c
     creating tweened data that can be used as basis for animation. Furthermore 
     it adds a number of vectorized interpolaters for common R data 
     types such as numeric, date and colour."
-tzdb,0.2.0,,"covr, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Provides an up-to-date copy of the Internet Assigned Numbers
+tzdb,0.3.0,,"covr, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Provides an up-to-date copy of the Internet Assigned Numbers
     Authority (IANA) Time Zone Database. It is updated periodically to
     reflect changes made by political bodies to time zone boundaries, UTC
     offsets, and daylight saving time rules. Additionally, this package
@@ -1848,9 +2032,9 @@ tzdb,0.2.0,,"covr, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"Pr
     which this package exposes to make it easier for other R packages to
     utilize. Headers are provided for calendar specific calculations,
     along with a limited interface for time zone manipulations."
-units,0.7-2,Rcpp,"udunits2, NISTunits, measurements, xml2, magrittr, pillar (>=
-1.3.0), dplyr (>= 1.0.0), vctrs (>= 0.3.1), knitr, testthat (>=
-3.0.0), ggforce, rmarkdown",https://cran.rstudio.com/src/contrib,"Support for measurement units in R vectors, matrices
+units,0.8-0,Rcpp,"NISTunits, measurements, xml2, magrittr, pillar (>= 1.3.0),
+dplyr (>= 1.0.0), vctrs (>= 0.3.1), ggplot2 (> 3.2.1), testthat
+(>= 3.0.0), vdiffr, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"Support for measurement units in R vectors, matrices
     and arrays: automatic propagation, conversion, derivation
     and simplification of units; raising errors in case of unit
     incompatibility. Compatible with the POSIXct, Date and difftime 
@@ -1865,11 +2049,11 @@ urltools,1.7.3,"Rcpp, methods, triebeard","testthat, knitr",https://cran.rstudio
     useful for people dealing with web-related datasets, such as server-side
     logs, although may be useful for other situations involving large sets of
     URLs."
-usethis,2.1.5,"cli (>= 3.0.1), clipr (>= 0.3.0), crayon, curl (>= 2.7), desc
+usethis,2.1.6,"cli (>= 3.0.1), clipr (>= 0.3.0), crayon, curl (>= 2.7), desc
 (>= 1.4.0), fs (>= 1.3.0), gert (>= 1.4.1), gh (>= 1.2.1), glue
 (>= 1.3.0), jsonlite, lifecycle (>= 1.0.0), purrr, rappdirs,
-rlang (>= 0.4.10), rprojroot (>= 1.2), rstudioapi, stats,
-utils, whisker, withr (>= 2.3.0), yaml","covr, knitr, magick, mockr, pkgload, rmarkdown, roxygen2 (>=
+rlang (>= 1.0.0), rprojroot (>= 1.2), rstudioapi, stats, utils,
+whisker, withr (>= 2.3.0), yaml","covr, knitr, magick, mockr, pkgload, rmarkdown, roxygen2 (>=
 7.1.2), spelling (>= 1.2), styler (>= 1.2.0), testthat (>=
 3.1.0)",https://cran.rstudio.com/src/contrib,"Automate package and project setup tasks that are
     otherwise performed manually. This includes setting up unit testing,
@@ -1879,13 +2063,14 @@ utf8,1.2.2,,"cli, covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0),
 withr",https://cran.rstudio.com/src/contrib,"Process and print 'UTF-8' encoded international
     text (Unicode). Input, validate, normalize, encode, format, and
     display."
-uuid,1.0-3,,,https://cran.rstudio.com/src/contrib,Tools for generating and handling of UUIDs (Universally Unique Identifiers).
+uuid,1.1-0,,,https://cran.rstudio.com/src/contrib,Tools for generating and handling of UUIDs (Universally Unique Identifiers).
 V8,4.0.0,"Rcpp (>= 0.12.12), jsonlite (>= 1.0), curl (>= 1.0), utils","testthat, knitr, rmarkdown",https://cran.rstudio.com/src/contrib,"An R interface to V8: Google's open source JavaScript and WebAssembly 
     engine. This package can be compiled either with V8 version 6 and up or NodeJS
     when built as a shared library."
-vctrs,0.3.8,"ellipsis (>= 0.2.0), glue, rlang (>= 0.4.10)","bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
-pillar (>= 1.4.4), pkgdown, rmarkdown, testthat (>= 2.3.0),
-tibble, withr, xml2, waldo (>= 0.2.0), zeallot",https://cran.rstudio.com/src/contrib,"Defines new notions of prototype and size that are
+vctrs,0.4.1,"cli (>= 3.2.0), glue, rlang (>= 1.0.2)","bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,
+pillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=
+3.0.0), tibble (>= 3.1.3), withr, xml2, waldo (>= 0.2.0),
+zeallot",https://cran.rstudio.com/src/contrib,"Defines new notions of prototype and size that are
     used to provide tools for consistent and well-founded type-coercion
     and size-recycling, and are in turn connected to ideas of type- and
     size-stability useful for analysing function interfaces."
@@ -1929,22 +2114,40 @@ waffle,0.7.0,"RColorBrewer, grid, gridExtra, gtable, extrafont",testthat,https:/
     small, just as should be done when creating pie charts. Tools are provided
     to create waffle charts as well as stitch them together, and to use glyphs
     for making isotype pictograms."
-waldo,0.3.1,"cli, diffobj (>= 0.3.4), fansi, glue, methods, rematch2, rlang
-(>= 0.4.10), tibble","testthat (>= 3.0.0), covr, R6, withr, xml2",https://cran.rstudio.com/src/contrib,"Compare complex R objects and reveal the key
+waldo,0.4.0,"cli, diffobj (>= 0.3.4), fansi, glue, methods, rematch2, rlang
+(>= 1.0.0), tibble","covr, R6, testthat (>= 3.0.0), withr, xml2",https://cran.rstudio.com/src/contrib,"Compare complex R objects and reveal the key
     differences.  Designed particularly for use in testing packages where
     being able to quickly isolate key differences makes understanding test
     failures much easier."
-Wavelength,2.4.0,"crayon, dplyr(>= 1.0.0), lubridate, magrittr, purrr, readr,
-readxl, stats, stringr, tibble, tidyr, vroom","curl, glue, googledrive, googlesheets4, httr, jsonlite,
-keyringr, openxlsx, usethis, plyr",https://github.com/USAID-OHA-SI/Wavelength,USAID OHA Office. Munging of mission weekly HFR data.
-webshot,0.5.2,"magrittr, jsonlite, callr","httpuv, knitr, rmarkdown, shiny",https://cran.rstudio.com/src/contrib,"Takes screenshots of web pages, including Shiny applications and R
+Wavelength,2.4.0,"crayon,
+dplyr(>= 1.0.0),
+lubridate,
+magrittr,
+purrr,
+readr,
+readxl,
+stats,
+stringr,
+tibble,
+tidyr,
+vroom","curl,
+glue,
+googledrive,
+googlesheets4,
+httr,
+jsonlite,
+keyringr,
+openxlsx,
+usethis,
+plyr",https://github.com/USAID-OHA-SI/Wavelength,USAID OHA Office. Munging of mission weekly HFR data.
+webshot,0.5.3,"magrittr, jsonlite, callr","httpuv, knitr, rmarkdown, shiny",https://cran.rstudio.com/src/contrib,"Takes screenshots of web pages, including Shiny applications and R
     Markdown documents."
 whisker,0.4,,markdown,https://cran.rstudio.com/src/contrib,Implements 'Mustache' logicless templating.
 whoami,1.3.0,"httr, jsonlite, utils","covr, mockery, testthat, withr",https://cran.rstudio.com/src/contrib,"Look up the username and full name of the current user,
     the current user's email address and 'GitHub' username,
     using various sources of system and configuration information."
-withr,2.4.3,"graphics, grDevices, stats","callr, covr, DBI, knitr, lattice, methods, rmarkdown,
-RSQLite, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"A set of functions to run code 'with' safely and
+withr,2.5.0,"graphics, grDevices, stats","callr, covr, DBI, knitr, lattice, methods, rlang, rmarkdown
+(>= 2.12), RSQLite, testthat (>= 3.0.0)",https://cran.rstudio.com/src/contrib,"A set of functions to run code 'with' safely and
     temporarily modified global state. Many of these functions were
     originally a part of the 'devtools' package, this provides a simple
     package with limited dependencies to provide access to these
@@ -1958,10 +2161,12 @@ wk,0.6.0,,"testthat (>= 3.0.0), vctrs (>= 0.3.0), sf, tibble, readr",https://cra
   useful in R if the information they contain can be 
   accessed in R, for which high-performance functions 
   are provided here."
-xfun,0.29,"stats, tools","testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
+writexl,1.4.0,,"spelling, readxl, nycflights13, testthat, bit64",https://cran.rstudio.com/src/contrib,"Zero-dependency data frame to xlsx exporter based on 'libxlsxwriter'. 
+    Fast and no Java or Excel required."
+xfun,0.31,"stats, tools","testit, parallel, codetools, rstudioapi, tinytex (>= 0.30),
 mime, markdown, knitr, htmltools, remotes, pak, rhub, renv,
 curl, jsonlite, rmarkdown",https://cran.rstudio.com/src/contrib,Miscellaneous functions commonly used in other packages maintained by 'Yihui Xie'.
-XML,3.99-0.8,,"bitops, RCurl",https://cran.rstudio.com/src/contrib,"Many approaches for both reading and
+XML,3.99-0.10,,"bitops, RCurl",https://cran.rstudio.com/src/contrib,"Many approaches for both reading and
         creating XML (and HTML) documents (including DTDs), both local
         and accessible via HTTP or FTP.  Also offers access to an
         'XPath' ""interpreter""."
@@ -1975,12 +2180,12 @@ xopen,1.0.0,processx,"ps, testthat",https://cran.rstudio.com/src/contrib,"Cross 
     with their associated programs."
 xtable,1.8-4,"stats, utils","knitr, plm, zoo, survival",https://cran.rstudio.com/src/contrib,Coerce data to LaTeX and HTML tables.
 xts,0.12.1,methods,"timeSeries, timeDate, tseries, chron, fts, tis, RUnit",https://cran.rstudio.com/src/contrib,"Provide for uniform handling of R's different time-based data classes by extending zoo, maximizing native format information preservation and allowing for user level customization and extension, while simplifying cross-class interoperability."
-yaml,2.2.1,,RUnit,https://cran.rstudio.com/src/contrib,"Implements the 'libyaml' 'YAML' 1.1 parser and emitter
-  (<http://pyyaml.org/wiki/LibYAML>) for R."
+yaml,2.3.5,,RUnit,https://cran.rstudio.com/src/contrib,"Implements the 'libyaml' 'YAML' 1.1 parser and emitter
+  (<https://pyyaml.org/wiki/LibYAML>) for R."
 zip,2.2.0,,"covr, processx, R6, testthat, withr",https://cran.rstudio.com/src/contrib,"Cross-Platform 'zip' Compression Library. A replacement
     for the 'zip' function, that does not require any additional
     external tools on any platform."
-zoo,1.8-9,"utils, graphics, grDevices, lattice (>= 0.20-27)","AER, coda, chron, fts, ggplot2 (>= 3.0.0), mondate, scales,
+zoo,1.8-10,"utils, graphics, grDevices, lattice (>= 0.20-27)","AER, coda, chron, fts, ggplot2 (>= 3.0.0), mondate, scales,
 stinepack, strucchange, timeDate, timeSeries, tis, tseries, xts",https://cran.rstudio.com/src/contrib,"An S3 class with methods for totally ordered indexed
              observations. It is particularly aimed at irregular time series
              of numeric vectors/matrices and factors. zoo's key design goals
