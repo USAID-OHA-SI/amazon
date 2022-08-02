@@ -33,3 +33,49 @@ new_pkgs <- my_pkgs %>%
 write_csv(new_pkgs,
           "Dataout/OHA_R_packages.csv", 
           na = "")
+
+existing_pkgs %>% 
+  filter(!package %in% local_pkgs$Package) 
+  
+# remotes::install_github("USAID-OHA-SI/glamr", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/gisr", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/gophr", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/Wavelength", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/tameDP", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/COVIDutilities", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/selfdestructin5", build_vignettes = TRUE)
+
+# Install Pacakges from file
+existing_pkgs %>% 
+  filter(!package %in% local_pkgs$Package) %>% 
+  select(package, repository) %>% 
+  pwalk(function(package, repository) {
+    
+    print(package)
+    
+    curr_pkgs <- installed.packages() %>% as_tibble()
+    
+    gh <- "https://github.com/"
+    
+    if(!package %in% curr_pkgs$package) {
+      
+      print("Package is being installed ...")
+    
+      if (str_detect(repository, gh)) {
+        
+        repo <- str_remove(repository, gh)
+        
+        remotes::install_github(repo)
+      }
+      else {
+        install.packages(package, repos = repository, dependencies = TRUE)
+      }
+    } 
+    else {
+      print("Package already installed.")
+    }
+    
+  })
+
+
