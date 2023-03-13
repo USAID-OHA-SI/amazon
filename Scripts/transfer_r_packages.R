@@ -12,6 +12,8 @@ curr_lib <- lib_loc <- paste0("C:/Users/",
 
 if (!dir.exists(curr_lib)) dir.create(curr_lib)
 
+.libPaths(new = curr_lib)
+.libPaths()
 
 # Install start up packages into new lib paths
 #install.packages(c("remotes", "tidyverse"), lib =  curr_lib)
