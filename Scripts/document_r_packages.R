@@ -39,6 +39,7 @@ existing_pkgs %>%
   
 # remotes::install_github("USAID-OHA-SI/glamr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/grabr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/gisr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/gophr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/Wavelength", build_vignettes = TRUE)
