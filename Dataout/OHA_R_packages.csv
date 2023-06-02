@@ -387,7 +387,7 @@ rstanarm, see, spelling, stringr, testthat, tidyr, tweedie",https://cran.rstudio
     Interval - HDI; Kruschke, 2015 <doi:10.1016/C2012-0-00477-2>) and
     indices used for null-hypothesis testing (such as ROPE percentage, pd
     and Bayes factors)."
-bdsmatrix,1.3-6,,,https://cran.rstudio.com/src/contrib,"This is a special case of sparse matrices, used by coxme. "
+bdsmatrix,1.3-6,,,https://cran.rstudio.com/src/contrib,"This is a special case of sparse matrices, used by coxme."
 beepr,1.3,"stringr (>= 1.0.0), audio",,https://cran.rstudio.com/src/contrib,"The main function of this package is beep(), with the purpose to
     make it easy to play notification sounds on whatever platform you are on.
     It is intended to be useful, for example, if you are running a long analysis
@@ -1161,7 +1161,7 @@ geomtextpath,0.1.0,"grid, scales, systemfonts, rlang, textshaping","testthat (>=
 sf, xml2, markdown",https://cran.rstudio.com/src/contrib,"A 'ggplot2' extension that allows text to follow curved paths.
     Curved text makes it easier to directly label paths or neatly annotate in 
     polar co-ordinates."
-geosphere,1.5-18,"Rcpp, sp","methods, raster",https://cran.rstudio.com/src/contrib,"Spherical trigonometry for geographic applications. That is, compute distances and related measures for angular (longitude/latitude) locations. "
+geosphere,1.5-18,"Rcpp, sp","methods, raster",https://cran.rstudio.com/src/contrib,"Spherical trigonometry for geographic applications. That is, compute distances and related measures for angular (longitude/latitude) locations."
 gert,1.9.2,"askpass, credentials (>= 1.2.1), openssl (>= 2.0.3),
 rstudioapi (>= 0.11), sys, zip (>= 2.1.0)","spelling, knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"Simple git client for R based on 'libgit2' <https://libgit2.org> with
     support for SSH and HTTPS remotes. All functions in 'gert' use basic R data 
@@ -2169,7 +2169,7 @@ testthat (>= 2.1.0), vdiffr, viridisLite",https://cran.rstudio.com/src/contrib,"
     overwhelming with palettes spread over many packages with many
     different API's. This packages aims to collect all color palettes
     across the R ecosystem under the same package with a streamlined API."
-palmerpenguins,0.1.1,,"knitr, rmarkdown, tibble, ggplot2, dplyr, tidyr, recipes",https://cran.rstudio.com/src/contrib,"Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) Program. "
+palmerpenguins,0.1.1,,"knitr, rmarkdown, tibble, ggplot2, dplyr, tidyr, recipes",https://cran.rstudio.com/src/contrib,"Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) Program."
 parallelly,1.32.1,"parallel, tools, utils",,https://cran.rstudio.com/src/contrib,"Utility functions that enhance the 'parallel' package and support the built-in parallel backends of the 'future' package.  For example, availableCores() gives the number of CPU cores available to your R process as given by the operating system, 'cgroups' and Linux containers, R options, and environment variables, including those set by job schedulers on high-performance compute clusters. If none is set, it will fall back to parallel::detectCores(). Another example is makeClusterPSOCK(), which is backward compatible with parallel::makePSOCKcluster() while doing a better job in setting up remote cluster workers without the need for configuring the firewall to do port-forwarding to your local computer."
 parameters,0.18.1,"bayestestR (>= 0.11.5), datawizard (>= 0.4.1), insight (>=
 0.17.1), graphics, methods, stats, utils","AER, afex, aod, BayesFactor, BayesFM, bbmle, betareg, biglm,
@@ -2415,7 +2415,7 @@ quantreg,5.95,"methods, graphics, Matrix, MatrixModels, survival, MASS","interp,
   censored survival data.  Portfolio selection methods based on expected shortfall
   risk are also now included. See Koenker, R. (2005) Quantile Regression, Cambridge U. Press,
   <doi:10.1017/CBO9780511754098> and Koenker, R. et al. (2017) Handbook of Quantile Regression, 
-  CRC Press, <doi:10.1201/9781315120256>. "
+  CRC Press, <doi:10.1201/9781315120256>."
 rJava,1.0-6,,,https://cran.rstudio.com/src/contrib,"Low-level interface to Java VM very much like .C/.Call and friends. Allows creation of objects, calling methods and accessing fields."
 ragg,1.2.5,"systemfonts (>= 1.0.3), textshaping (>= 0.3.0)","covr, graphics, grid, testthat",https://cran.rstudio.com/src/contrib,"Anti-Grain Geometry (AGG) is a high-quality and
     high-performance 2D drawing library. The 'ragg' package provides a set
@@ -2547,7 +2547,7 @@ rstudioapi (>= 0.6), htmltools",https://cran.rstudio.com/src/contrib,"An R inter
 rintrojs,0.3.2,"shiny, jsonlite","testthat, covr",https://cran.rstudio.com/src/contrib,"A wrapper for the 'Intro.js' library (For more info: <https://introjs.com/>). 
   This package makes it easy to include step-by-step introductions, and clickable hints in a 'Shiny' 
   application. It supports both static introductions in the UI, and programmatic introductions from 
-  the server-side. "
+  the server-side."
 rio,0.5.29,"tools, stats, utils, foreign, haven (>= 1.1.2), curl (>= 0.6),
 data.table (>= 1.9.8), readxl (>= 0.1.1), openxlsx, tibble","datasets, bit64, testthat, knitr, magrittr, arrow, clipr,
 feather, fst, hexView, jsonlite, pzfx, readODS (>= 1.6.4),
@@ -3094,7 +3094,7 @@ tokenizers,0.3.0,"stringi (>= 1.0.1), Rcpp (>= 0.12.3), SnowballC (>= 0.5.1)","c
     and a function for splitting longer texts into separate documents, each with
     the same number of words.  The tokenizers have a consistent interface, and
     the package is built on the 'stringi' and 'Rcpp' packages for  fast
-    yet correct tokenization in 'UTF-8'. "
+    yet correct tokenization in 'UTF-8'."
 triebeard,0.3.0,Rcpp,"knitr, rmarkdown, testthat",https://cran.rstudio.com/src/contrib,"'Radix trees', or 'tries', are key-value data structures optimised for efficient lookups, similar in purpose
              to hash tables. 'triebeard' provides an implementation of 'radix trees' for use in R programming and in
              developing packages with 'Rcpp'."
