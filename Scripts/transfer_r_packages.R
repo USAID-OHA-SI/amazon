@@ -19,8 +19,8 @@ if (!dir.exists(curr_lib)) dir.create(curr_lib)
 #install.packages(c("remotes", "tidyverse"), lib =  curr_lib)
 
 # Load start up libraries
-library(remotes, lib.loc = curr_lib)
-library(tidyverse, lib.loc = curr_lib)
+library(remotes)
+library(tidyverse)
 
 # Github Package
 gh <- "https://github.com/"
@@ -57,12 +57,14 @@ my_pkgs <- cran_pkgs %>%
 # remotes::install_github("USAID-OHA-SI/COVIDutilities", lib = curr_lib, build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/selfdestructin5", lib = curr_lib, build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/gagglr", lib = curr_lib, build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/Interesting", lib = curr_lib, build_vignettes = TRUE)
 
 
 my_pkgs %>% 
   select(package, repository) %>% 
-  filter(str_detect(repository, gh, negate = T)) %>% # 
-  #filter(str_detect(repository, gh)) %>% 
+  #mutate(repository2 = str_remove(repository, "(?<=,).*")) %>% 
+  filter(str_detect(repository, "github", negate = T)) %>% # 
+  #filter(str_detect(repository, "github")) %>% view
   pwalk(function(package, repository) {
     
     print(package)
@@ -76,14 +78,16 @@ my_pkgs %>%
       print(paste0("Package [", package, "] is being installed ..."))
       print(repository)
       
-      if (str_detect(repository, gh)) {
+      if (str_detect(repository, "github")) {
         
-        repo <- str_remove(repository, gh)
+        repo <- str_remove(repository, gh) 
         
-        remotes::install_github(repo, lib = curr_lib)
+        remotes::install_github(repo)
+        #remotes::install_github(repo, lib = curr_lib)
       }
       else {
-        install.packages(package, lib = curr_lib, dependencies = TRUE)
+        install.packages(package, dependencies = TRUE)
+        #install.packages(package, lib = curr_lib, dependencies = TRUE)
       }
     } 
     else {

@@ -1,3 +1,4 @@
+#install.packages(c("remotes", "devtools", "tidyverse"))
 library(tidyverse)
 
 local_pkgs <- installed.packages() %>% 
@@ -39,6 +40,7 @@ existing_pkgs %>%
   
 # remotes::install_github("USAID-OHA-SI/glamr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/grabr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/gisr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/gophr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/Wavelength", build_vignettes = TRUE)
@@ -47,29 +49,42 @@ existing_pkgs %>%
 # remotes::install_github("USAID-OHA-SI/selfdestructin5", build_vignettes = TRUE)
 
 # Install Pacakges from file
+# NOTE - You may need to do multiple runs to get all of them installed.
+
 existing_pkgs %>% 
-  filter(!package %in% local_pkgs$Package) %>% 
+  filter(!package %in% local_pkgs$Package,
+         str_detect(repository, "USAID-OHA-SI", negate = TRUE)) %>% 
   select(package, repository) %>% 
   pwalk(function(package, repository) {
     
-    print(package)
+    print(paste0(package, ": ", repository))
     
     curr_pkgs <- installed.packages() %>% as_tibble()
     
     gh <- "https://github.com/"
+    cr <- "https://cran.rstudio.com"
     
-    if(!package %in% curr_pkgs$package) {
+    repo <- repository %>% 
+      str_split(",") %>% 
+      unlist() %>% 
+      first() %>% 
+      str_trim(side = "both")
+    
+    if(!package %in% curr_pkgs$Package) {
       
       print("Package is being installed ...")
     
-      if (str_detect(repository, gh)) {
+      if (str_detect(repo, gh)) {
         
-        repo <- str_remove(repository, gh)
+        name <- str_remove(repo, gh)
         
-        remotes::install_github(repo)
+        remotes::install_github(repo = name)
       }
+      else if (str_detect(repo, cr)) {
+        install.packages(package, dependencies = TRUE)
+      } 
       else {
-        install.packages(package, repos = repository, dependencies = TRUE)
+        print(paste0("WARN - Not sure how to install this: ", repo))
       }
     } 
     else {
