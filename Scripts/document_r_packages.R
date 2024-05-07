@@ -41,12 +41,13 @@ existing_pkgs %>%
 # remotes::install_github("USAID-OHA-SI/glamr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
 # remotes::install_github("USAID-OHA-SI/grabr", build_vignettes = TRUE)
-# remotes::install_github("USAID-OHA-SI/gisr", build_vignettes = TRUE)
-# remotes::install_github("USAID-OHA-SI/gophr", build_vignettes = TRUE)
-# remotes::install_github("USAID-OHA-SI/Wavelength", build_vignettes = TRUE)
-# remotes::install_github("USAID-OHA-SI/tameDP", build_vignettes = TRUE)
-# remotes::install_github("USAID-OHA-SI/COVIDutilities", build_vignettes = TRUE)
-# remotes::install_github("USAID-OHA-SI/selfdestructin5", build_vignettes = TRUE)
+# remotes::install_github("USAID-OHA-SI/gisr")
+# remotes::install_github("USAID-OHA-SI/gophr")
+# remotes::install_github("USAID-OHA-SI/Wavelength")
+# remotes::install_github("USAID-OHA-SI/tameDP")
+# remotes::install_github("USAID-OHA-SI/COVIDutilities")
+# remotes::install_github("USAID-OHA-SI/selfdestructin5")
+# remotes::install_github("USAID-OHA-SI/cascade")
 
 # Install Pacakges from file
 # NOTE - You may need to do multiple runs to get all of them installed.
